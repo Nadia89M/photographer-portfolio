@@ -91,7 +91,7 @@ a img {
 }
 .photo-album h1 span {
     background-color: white;
-    padding: 0.4em 0.8em 0.3em 0.8em;
+    padding: 0.3em 0.8em 0.5em 0.8em;
     -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
     -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
     box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);

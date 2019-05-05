@@ -43,6 +43,14 @@
             <a class="nav-link" href="{% url 'tearsheets' %}">Tearsheets</a>
           </li>
           <li 
+          {% if 'exhibitions' in request.path %} 
+            class="nav-item btn btn-6-orange btn-6a-orange active mr-3" 
+          {% else %} 
+            class="nav-item btn btn-6-orange btn-6a-orange mr-3"
+          {% endif %}>
+          <a class="nav-link" href="#">Exhibitions</a>
+        </li>
+          <li 
           {% if 'testimonials' in request.path %} 
             class="nav-item btn btn-6-yellow btn-6a-yellow active mr-3" 
           {% else %} 
