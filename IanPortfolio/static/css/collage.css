@@ -214,3 +214,16 @@ a:hover,
 a:focus {
     z-index: 5;
 }
+
+
+@media only screen and (max-width: 800px) {
+    .photo-album {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        height: 450px;
+        margin-top: 5em;
+        min-width: auto;
+        max-width: auto;
+    }
+  }
