@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Willow';
+    src:url('../fonts/Willow.ttf.woff') format('woff'),
+        url('../fonts/Willow.ttf.svg#Willow') format('svg'),
+        url('../fonts/Willow.ttf.eot'),
+        url('../fonts/Willow.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HillHouse';
+    src:url('../fonts/HillHouse.ttf.woff') format('woff'),
+        url('../fonts/HillHouse.ttf.svg#HillHouse') format('svg'),
+        url('../fonts/HillHouse.ttf.eot'),
+        url('../fonts/HillHouse.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 .photo-album-container{
     min-height: 100vh;
     font-size: 16px;
@@ -11,7 +31,7 @@
 
 a.polaroid {
     display: block;
-    text-decoration: none;
+    text-decoration: none !important;
     color: #333;
     padding: 10px 10px 20px 10px;
     width: 150px;
@@ -35,6 +55,7 @@ a.polaroid:active {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
+    color: rgb(132, 184, 23) !important;
 }
 .polaroid img {
     margin: 0 0 15px;
@@ -70,12 +91,13 @@ a img {
 }
 .photo-album h1 span {
     background-color: white;
-    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
     padding: 0.4em 0.8em 0.3em 0.8em;
     -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
     -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
     box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-    border: 1px solid #6A6A6A;
+    border: 2px solid rgb(132, 184, 23);
+    text-transform: uppercase;
+    font-family: 'HillHouse';
 }
 .photo-album .small {
     width: 75px;
@@ -215,6 +237,11 @@ a:focus {
     z-index: 5;
 }
 
+.collage-title {
+    color: rgba(132, 184, 23, 0.8);
+    font-size: 4vw;
+    text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.5);
+}
 
 @media only screen and (max-width: 800px) {
     .photo-album {
