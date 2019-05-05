@@ -1,0 +1,74 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+      <a class="navbar-brand" href="{% url 'index' %}">
+        <img src="{% static 'img/white-logo.png' %}" alt="" class="img-fluid" style="width: auto; height: 10vh;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav mr-auto">
+            <li 
+            {% if '/' == request.path %} 
+              class="nav-item active mr-3" 
+            {% else %} 
+              class="nav-item mr-3" 
+            {% endif %}
+          >
+              <a class="nav-link" href="{% url 'index' %}">Home</a>
+          </li>
+          <li 
+            {% if 'about' in request.path %} 
+              class="nav-item active mr-3" 
+            {% else %} 
+              class="nav-item mr-3"
+            {% endif %}>
+              <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+          <li 
+            {% if 'work' in request.path %} 
+              class="nav-item active mr-3" 
+            {% else %} 
+              class="nav-item mr-3"
+            {% endif %}>
+            <a class="nav-link" href="#">Work</a>
+          </li>
+          <li 
+            {% if 'tearsheets' in request.path %} 
+              class="nav-item active mr-3" 
+            {% else %} 
+              class="nav-item mr-3"
+            {% endif %}>
+            <a class="nav-link" href="#">Tearsheets</a>
+          </li>
+          <li 
+          {% if 'testimonials' in request.path %} 
+            class="nav-item active mr-3" 
+          {% else %} 
+            class="nav-item mr-3"
+          {% endif %}>
+          <a class="nav-link blog-title blog-link" href="#">Testimonials</a>
+        </li>
+          <li 
+            {% if 'news' in request.path %} 
+              class="nav-item active mr-3" 
+            {% else %} 
+              class="nav-item mr-3"
+            {% endif %}>
+              <a class="nav-link" href="#">News</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li>
+            <a href="#" target="_blank" class="nav-link animated fadeInLeft"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="nav-link animated fadeInLeft"><ion-icon name="logo-facebook"></ion-icon></ion-icon></a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="nav-link animated fadeInLeft"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
