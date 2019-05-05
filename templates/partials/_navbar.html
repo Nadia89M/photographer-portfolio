@@ -40,7 +40,7 @@
             {% else %} 
               class="nav-item btn btn-6-green btn-6a-green mr-3"
             {% endif %}>
-            <a class="nav-link" href="#">Tearsheets</a>
+            <a class="nav-link" href="{% url 'tearsheets' %}">Tearsheets</a>
           </li>
           <li 
           {% if 'testimonials' in request.path %} 
@@ -56,18 +56,18 @@
             {% else %} 
               class="nav-item btn btn-6-red btn-6a-red mr-3"
             {% endif %}>
-              <a class="nav-link" href="#">News</a>
+              <a class="nav-link" href="#">Blog</a>
           </li>
         </ul>
         <ul class="details ml-auto animated fadeInRightBig">
           <li>
-            <p>Ian Macaulay</p>
+            <p class="name">Ian Macaulay</p>
           </li>
           <li>
             <p><ion-icon name="call"></ion-icon> 07976701702</p>
           </li>
           <li>
-            <p><ion-icon name="mail"></ion-icon> ian<span class="email">@</span>ianmacaulay.com</p>
+            <p class="email"><ion-icon name="mail"></ion-icon> ian<span class="email">@</span>ianmacaulay.com</p>
           </li>
         </ul>
       </div>
