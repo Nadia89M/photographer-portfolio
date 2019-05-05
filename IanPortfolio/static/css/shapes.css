@@ -56,7 +56,7 @@
     clip-path: polygon(50% 0, 0% 100%, 9% 100%, 50% 17%, 50% 17%, 85% 91%, 13% 91%, 0 100%, 100% 100%, 50% 0);
     width: 80vh;
     height: 70vh;
-    background: rgba(132, 184, 23, 0.2);
+    background: rgba(155, 0, 86, 0.2);
     position: absolute;
     top: 1vh;
     left: 50%;
@@ -77,7 +77,7 @@
 }
 .strip {
     position: absolute;
-    background: linear-gradient(0deg, rgba(164, 0, 217, 0) 0%, 	rgba(238, 124, 14, 0.3) 35%, rgba(132, 184, 23, 0.3) 65%, rgba(132, 184, 23, 0) 100%);
+    background: linear-gradient(0deg, rgba(164, 0, 217, 0) 0%, 	rgba(0, 120, 42, 0.3) 35%, rgba(155, 0, 86, 0.3) 65%, rgba(132, 184, 23, 0) 100%);
 }
 #strip1 {
     width: 20vh;
@@ -140,8 +140,7 @@
     z-index: 200;
     padding-top: 65vh;
     text-align: center;
-    color: rgba(132, 184, 23, 0.8);
-    font-size: 6vw;
+    color: black;
+    font-size: 8vw;
     text-shadow: 0px 3px 50px rgba(0, 0, 0, 0.5);
-    font-family: 'HillHouse';
 }

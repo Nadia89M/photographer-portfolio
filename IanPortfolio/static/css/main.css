@@ -33,7 +33,198 @@ html {
     margin: 10rem auto 10rem auto;
     text-align: center;
     padding: 5rem;
-    border: 2px solid rgb(132, 184, 23); 
+    border: 2px solid rgb(155, 0, 86);
+}
+
+.signature{
+    max-height: 4rem;
+    max-width: auto;
+}
+
+.email {
+	font-family: "Raleway",Arial,Helvetica,sans-serif;
+}
+
+/*NAVBAR*/
+
+.navbar{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Button 6 purple*/
+.btn-6 {
+	color: #fff;
+	background: 	#9B0056;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+.btn-6:active {
+	top: 2px;
+}
+
+/* Button 6a */
+.btn-6a {
+	border: 4px solid 	#9B0056;
+}
+
+.btn-6a:hover {
+	background: transparent;
+	color: 	#9B0056;
+}
+
+/* Button 6 blue*/
+.btn-6-blue {
+    color: #fff;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+	background: 	#003688	;
+}
+
+.btn-6-blue:active {
+	top: 2px;
+}
+
+/* Button 6a */
+.btn-6a-blue {
+	border: 4px solid 	#003688	;
+}
+
+.btn-6a-blue:hover {
+    background: transparent;
+	color: 	#003688	;
+}
+
+/* Button 6 light blue*/
+.btn-6-l-blue {
+    color: #fff;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+	background: #0098D4	;
+}
+
+.btn-6-l-blue:active {
+	top: 2px;
+}
+
+/* Button 6a */
+.btn-6a-l-blue {
+	border: 4px solid 	#0098D4	;
+}
+
+.btn-6a-l-blue:hover {
+    background: transparent;
+	color: 	#0098D4	;
+}
+
+/* Button 6 green*/
+.btn-6-green {
+    color: #fff;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+	background: #00782A	;
+}
+
+.btn-6-green:active {
+	top: 2px;
+}
+
+/* Button 6a */
+.btn-6a-green {
+	border: 4px solid #00782A	;
+}
+
+.btn-6a-green:hover {
+    background: transparent;
+	color: 	#00782A	;
+}
+
+/* Button 6 yellow*/
+.btn-6-yellow {
+    color: #fff;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+	background: 	#FFD300	;
+}
+
+.btn-6-yellow:active {
+	top: 2px;
+}
+
+/* Button 6a */
+.btn-6a-yellow {
+	border: 4px solid	#FFD300;
+}
+
+.btn-6a-yellow:hover {
+    background: transparent;
+	color: 		#FFD300;
+}
+
+/* Button 6 red*/
+.btn-6-red {
+    color: #fff;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+	background: 	#E32017	;
+}
+
+.btn-6-red:active {
+	top: 2px;
+}
+
+/* Button 6a */
+.btn-6a-red {
+	border: 4px solid	#E32017;
+}
+
+.btn-6a-red:hover {
+    background: transparent;
+	color: 		#E32017;
+}
+
+.details li {
+	list-style: none;
+	color: white;
+}
+
+.details {
+	margin: 1rem;
 }
 
 @media only screen and (max-width: 800px) {

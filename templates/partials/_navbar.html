@@ -11,63 +11,63 @@
         <ul class="navbar-nav mr-auto">
             <li 
             {% if '/' == request.path %} 
-              class="nav-item active mr-3" 
+              class="nav-item btn btn-6 btn-6a active mr-3" 
             {% else %} 
-              class="nav-item mr-3" 
+              class="nav-item btn btn-6 btn-6a mr-3" 
             {% endif %}
           >
               <a class="nav-link" href="{% url 'index' %}">Home</a>
           </li>
           <li 
             {% if 'about' in request.path %} 
-              class="nav-item active mr-3" 
+              class="nav-item btn btn-6-blue btn-6a-blue active mr-3" 
             {% else %} 
-              class="nav-item mr-3"
+              class="nav-item btn btn-6-blue btn-6a-blue mr-3"
             {% endif %}>
               <a class="nav-link" href="{% url 'about' %}">About</a>
           </li>
           <li 
             {% if 'work' in request.path %} 
-              class="nav-item active mr-3" 
+              class="nav-item btn btn-6-l-blue btn-6a-l-blue active mr-3" 
             {% else %} 
-              class="nav-item mr-3"
+              class="nav-item btn btn-6-l-blue btn-6a-l-blue mr-3"
             {% endif %}>
             <a class="nav-link" href="#">Work</a>
           </li>
           <li 
             {% if 'tearsheets' in request.path %} 
-              class="nav-item active mr-3" 
+              class="nav-item btn btn-6-green btn-6a-green active mr-3" 
             {% else %} 
-              class="nav-item mr-3"
+              class="nav-item btn btn-6-green btn-6a-green mr-3"
             {% endif %}>
             <a class="nav-link" href="#">Tearsheets</a>
           </li>
           <li 
           {% if 'testimonials' in request.path %} 
-            class="nav-item active mr-3" 
+            class="nav-item btn btn-6-yellow btn-6a-yellow active mr-3" 
           {% else %} 
-            class="nav-item mr-3"
+            class="nav-item btn btn-6-yellow btn-6a-yellow mr-3"
           {% endif %}>
           <a class="nav-link blog-title blog-link" href="#">Testimonials</a>
         </li>
           <li 
             {% if 'news' in request.path %} 
-              class="nav-item active mr-3" 
+              class="nav-item btn btn-6-red btn-6a-red active mr-3" 
             {% else %} 
-              class="nav-item mr-3"
+              class="nav-item btn btn-6-red btn-6a-red mr-3"
             {% endif %}>
               <a class="nav-link" href="#">News</a>
           </li>
         </ul>
-        <ul class="navbar-nav ml-auto">
+        <ul class="details ml-auto animated fadeInRightBig">
           <li>
-            <a href="#" target="_blank" class="nav-link animated fadeInLeft"><ion-icon name="logo-instagram"></ion-icon></a>
+            <p>Ian Macaulay</p>
           </li>
           <li>
-            <a href="#" target="_blank" class="nav-link animated fadeInLeft"><ion-icon name="logo-facebook"></ion-icon></ion-icon></a>
+            <p><ion-icon name="call"></ion-icon> 07976701702</p>
           </li>
           <li>
-            <a href="#" target="_blank" class="nav-link animated fadeInLeft"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <p><ion-icon name="mail"></ion-icon> ian<span class="email">@</span>ianmacaulay.com</p>
           </li>
         </ul>
       </div>
