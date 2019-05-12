@@ -2,7 +2,6 @@
 body {
   line-height: 1.7;
   color: #4d4d4d;
-  font-weight: 300;
   font-size: 1rem;
 }
 
@@ -1614,6 +1613,23 @@ a:hover {
 
 .quote p {
   margin: 0;
+}
+
+.signature {
+  height: 60px;
+  width: auto;
+}
+
+.about {
+  margin: 40px;
+}
+
+.img {
+  text-align: center;
+}
+
+.since {
+  font-size: 700;
 }
 
 @media only screen and (max-width: 1199px) {
