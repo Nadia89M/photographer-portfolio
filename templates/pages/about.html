@@ -2,69 +2,38 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="photo-album-container">
-    <div class="photo-album">
-    
-        <h1 class="collage-title willow"><span>About Me</span></h1>
-                
-        <a href="#" class="large polaroid img1"><img src="{% static '/images/tyre.jpg' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        <a href="#" class="polaroid img2"><img src="{% static '/images/hat.jpg' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        <a href="#" class="small polaroid img3"><img src="{% static '/images/2018.png' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        
-        <a href="#" class="medium polaroid img4"><img src="{% static '/images/red.png' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        
-        <a href="#" class="polaroid img5"><img src="{% static '/images/fire.png' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        
-        
-        <a href="#" class="polaroid img6"><img src="{% static '/images/costume.png' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        
-        <a href="#" class="polaroid img7"><img src="{% static '/images/phrase.jpg' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        <a href="#" class="small polaroid img8"><img src="{% static '/images/tears.jpg' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        <a href="#" class="medium polaroid img9"><img src="{% static '/images/fear.png' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        <a href="#" class="polaroid img10"><img src="{% static '/images/advice.jpg' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        <a href="#" class="small polaroid img11"><img src="{% static '/images/holiday.jpg' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        <a href="#" class="small polaroid img12"><img src="{% static '/images/tube.png' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        <a href="#" class="small polaroid img13"><img src="{% static '/images/flag.png' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        <a href="#" class="small polaroid img14"><img src="{% static '/images/london.png' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-        <a href="#" class="polaroid img15"><img src="{% static '/images/dinner.jpg' %}" alt="" class="img-fluid">Lorem ipsum dolor sit amet</a>
-    </div>
-    <div class="about-text container card">
-        <div class="row">
-            <div class="col-md-12 mb-2">
-                <h1 class="willow">Welcome &amp; Thanks for visiting</h1>
-            </div>
-        </div>
-        <br/>
-        <div class="row">
-            <div class="col-md-12">
-                <p>Since you ask…
-
-                        Born & raised in Scotland, I completed a B.SC in Pure Mathematics before relocating to London to study photojournalism and launch my photographic career in 1985.
-                        
-                        Although I began working for magazines & PR companies, I’ve worked extensively for the retail, financial, legal & technology sectors and my work has featured in many newspapers, magazines, adverts, annual reports & corporate communications publications.
-                        
-                        I’m a visiting lecturer at the University for the Arts, London since 1995 where I taught Professional Photographic Practice and more recently I’ve been a tutor on the Graduate Diploma in Photography course.
-                        
-                        Over the years I’ve hosted free workshops for many clients on working effectively with photographers, getting press releases published and taking better pictures.
-                        
-                        I live with my redhead wife Susan & our two cats in the tax haven & tropical paradise of South East London.
-                        </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p>Thanks for taking the time to look at my work.
-                        I’m always looking for ways to improve the service I offer so all comments,
-                        compliments or criticisms are welcome, though as Noel Cowerd said ’I can
-                        stand any amount of criticism as long as it’s unqualified praise’
-                        Emails go straight to my phone but if it’s urgent please call – if I’m not able to
-                        answer, leave a message and I’ll respond as soon as I can.
-                        If I’m unavailable for a job I’ll be happy to recommend a suitable colleague
-                        who may be free to help, because I’m good that way….<br/>
-                        Thanks for visiting</p>
-                        <img src="{% static '/images/signature.jpg' %}" alt="" class="img-fluid signature"/>
-            </div>
-        </div>
-    </div>
+<div class="container-fluid">
+                <div class="row">
+                                <div class="col-4">
+                                        <p>Thanks for taking the time to look at my work.
+                                                I’m always looking for ways to improve the service I offer so all comments,
+                                                compliments or criticisms are welcome, though as Noel Cowerd said ’I can
+                                                stand any amount of criticism as long as it’s unqualified praise’
+                                                Emails go straight to my phone but if it’s urgent please call – if I’m not able to
+                                                answer, leave a message and I’ll respond as soon as I can.
+                                                If I’m unavailable for a job I’ll be happy to recommend a suitable colleague
+                                                who may be free to help, because I’m good that way….<br/>
+                                                Thanks for visiting</p>
+                                                <img src="{% static '/images/signature.jpg' %}" alt="" class="img-fluid signature"/>
+                                </div>
+                                <div class="col-4">
+                                        <img src="{% static '/images/pic.jpg' %}" alt="" class="img-fluid"/>
+                                </div>
+                                <div class="col-4">
+                                        <p><strong>Since you ask…</strong>
+                            
+                                                Born & raised in Scotland, I completed a B.SC in Pure Mathematics before relocating to London to study photojournalism and launch my photographic career in 1985.
+                                                
+                                                Although I began working for magazines & PR companies, I’ve worked extensively for the retail, financial, legal & technology sectors and my work has featured in many newspapers, magazines, adverts, annual reports & corporate communications publications.
+                                                
+                                                I’m a visiting lecturer at the University for the Arts, London since 1995 where I taught Professional Photographic Practice and more recently I’ve been a tutor on the Graduate Diploma in Photography course.
+                                                
+                                                Over the years I’ve hosted free workshops for many clients on working effectively with photographers, getting press releases published and taking better pictures.
+                                                
+                                                I live with my redhead wife Susan & our two cats in the tax haven & tropical paradise of South East London.
+                                                </p>
+                                    
+                                </div>
+                            </div>
 </div>
 {% endblock %}
