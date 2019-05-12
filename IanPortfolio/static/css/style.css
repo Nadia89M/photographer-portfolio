@@ -1632,6 +1632,10 @@ a:hover {
   font-size: 700;
 }
 
+.active {
+  color: blue !important;
+}
+
 @media only screen and (max-width: 1199px) {
   .logo-nav {
     display: inline-block;

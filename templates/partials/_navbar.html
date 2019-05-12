@@ -61,8 +61,14 @@
             role="navigation"
           >
             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-              <li class="active"><a href="{% url 'index' %}">Home</a></li>
-              <li><a href="{% url 'welcome' %}">Welcome</a></li>
+              <li 
+                {% if '/' == request.path %} 
+                  class="active" 
+                {% endif %}><a href="{% url 'index' %}">Home</a></li>
+              <li
+                {% if 'welcome' in request.path %} 
+                  class="active" 
+                {% endif %}><a href="{% url 'welcome' %}">Welcome</a></li>
               <li><a href="#">Work</a></li>
               <li><a href="#">Recent Activity</a></li>
               <li><a href="#">Testimonials</a></li>
