@@ -1,82 +1,94 @@
 {% load static %}
-<nav class="navbar navbar-expand-xl navbar-dark bg-dark" >
-      <a class="navbar-brand" href="{% url 'index' %}">
-        <img src="{% static 'images/logo-ian.png' %}" alt="" class="img-fluid" style="width: auto; height: 8vh;">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav mr-auto">
-            <li 
-            {% if '/' == request.path %} 
-              class="nav-item btn btn-6 btn-6a active mr-3" 
-            {% else %} 
-              class="nav-item btn btn-6 btn-6a mr-3" 
-            {% endif %}
-          >
-              <a class="nav-link" href="{% url 'index' %}">Home</a>
-          </li>
-          <li 
-            {% if 'about' in request.path %} 
-              class="nav-item btn btn-6-blue btn-6a-blue active mr-3" 
-            {% else %} 
-              class="nav-item btn btn-6-blue btn-6a-blue mr-3"
-            {% endif %}>
-              <a class="nav-link" href="{% url 'about' %}">About</a>
-          </li>
-          <li 
-            {% if 'work' in request.path %} 
-              class="nav-item btn btn-6-l-blue btn-6a-l-blue active mr-3" 
-            {% else %} 
-              class="nav-item btn btn-6-l-blue btn-6a-l-blue mr-3"
-            {% endif %}>
-            <a class="nav-link" href="#">Work</a>
-          </li>
-          <li 
-            {% if 'tearsheets' in request.path %} 
-              class="nav-item btn btn-6-green btn-6a-green active mr-3" 
-            {% else %} 
-              class="nav-item btn btn-6-green btn-6a-green mr-3"
-            {% endif %}>
-            <a class="nav-link" href="{% url 'tearsheets' %}">Tearsheets</a>
-          </li>
-          <li 
-          {% if 'exhibitions' in request.path %} 
-            class="nav-item btn btn-6-orange btn-6a-orange active mr-3" 
-          {% else %} 
-            class="nav-item btn btn-6-orange btn-6a-orange mr-3"
-          {% endif %}>
-          <a class="nav-link" href="#">Exhibitions</a>
-        </li>
-          <li 
-          {% if 'testimonials' in request.path %} 
-            class="nav-item btn btn-6-yellow btn-6a-yellow active mr-3" 
-          {% else %} 
-            class="nav-item btn btn-6-yellow btn-6a-yellow mr-3"
-          {% endif %}>
-          <a class="nav-link blog-title blog-link" href="#">Testimonials</a>
-        </li>
-          <li 
-            {% if 'news' in request.path %} 
-              class="nav-item btn btn-6-red btn-6a-red active mr-3" 
-            {% else %} 
-              class="nav-item btn btn-6-red btn-6a-red mr-3"
-            {% endif %}>
-              <a class="nav-link" href="#">Blog</a>
-          </li>
-        </ul>
-        <ul class="details ml-auto animated fadeInRightBig">
-          <li>
-            <p class="name">Ian Macaulay</p>
-          </li>
-          <li>
-            <p><ion-icon name="call"></ion-icon> 07976701702</p>
-          </li>
-          <li>
-            <p class="email"><ion-icon name="mail"></ion-icon> ian<span class="email">@</span>ianmacaulay.com</p>
-          </li>
-        </ul>
+<div class="site-wrap">
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
       </div>
-    </nav>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  <header class="site-navbar py-3" role="banner">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-6 col-xl-2" data-aos="fade-down">
+          <h1 class="mb-0"></h1>
+          <ul
+            class="site-menu js-clone-nav ml-auto list-unstyled   mb-0"
+          ></ul>
+        </div>
+        <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
+          <nav
+            class="site-navigation position-relative text-right text-lg-center"
+            role="navigation"
+          >
+            <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+              <li class="active">
+                <a href="{% url 'index' %}" class="mb-0"
+                  ><img
+                    src="{% static 'images/logo-ian-text.png' %}"
+                    class="logo"
+                    alt="logo"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+          <div class="d-none d-xl-inline-block">
+            <ul
+              class="site-menu js-clone-nav ml-auto list-unstyled  text-right mb-0"
+            ></ul>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-8 col-xl-2" data-aos="fade-down">
+          <a href="{% url 'index' %}" class="mb-0"
+            ><img
+              src="{% static 'images/logo-ian-text.png' %}"
+              class="logo-nav img-fluid"
+              alt="logo"
+          /></a>
+          <ul
+            class="site-menu js-clone-nav ml-auto list-unstyled   mb-0"
+          ></ul>
+        </div>
+        <div class="col-12 d-none d-xl-block" data-aos="fade-down">
+          <nav
+            class="site-navigation position-relative text-right text-lg-center"
+            role="navigation"
+          >
+            <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+              <li class="active"><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="#">Welcome</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Recent Activity</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Tearsheets</a></li>
+              <li><a href="#">Exhibitions</a></li>
+              <li><a href="#">Elements</a></li>
+              <li><a href="#">Game</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-4 col-xl-2 text-right" data-aos="fade-down">
+          <div class="d-none d-xl-inline-block">
+            <ul
+              class="site-menu js-clone-nav ml-auto list-unstyled  text-right mb-0"
+            ></ul>
+          </div>
+
+          <div
+            class="d-inline-block d-xl-none ml-md-0 mr-auto py-3"
+            style="position: relative; top: 3px;"
+          >
+            <a href="#" class="site-menu-toggle js-menu-toggle text-black"
+              ><span class="icon-menu h3"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
