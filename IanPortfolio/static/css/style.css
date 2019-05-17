@@ -3,6 +3,7 @@ body {
   line-height: 1.7;
   color: #4d4d4d;
   font-size: 1rem;
+  text-align: justify;
 }
 
 ::-moz-selection {
@@ -1649,14 +1650,6 @@ a:hover {
   color: #00782A !important;
 }
 
-.pic {
-  -webkit-animation: fadein 2s;
-  /*Safari,ChromeandOpera>12.1*/-moz-animation: fadein 10s;
-  /*Firefox<16*/-ms-animation: fadein 10s;
-  /*InternetExplorer*/-o-animation: fadein 10s;
-  /*Opera<12.1*/animation: fadein 10s;
-}
-
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -1686,6 +1679,70 @@ a:hover {
   to   { opacity: 1; }
 }
 
+/*Header Carousel*/
+
+.tech-slideshow {
+  height: 60vh;  
+  max-width: 2000px;  
+  margin: 0 auto;
+  position: relative;  
+  overflow: hidden;  
+  transform: translate3d(0, 0, 0);
+  margin-top: 2rem;
+  border: 0.5rem solid #dfedfc;
+}
+.tech-slideshow > div {
+  height: 60vh;  
+  width: 8000px;  
+  transform: translate3d(0, 0, 0);
+  background: url(../images/panoramic.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  height: 100%;
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 30s linear infinite;
+  -webkit-animation: moveSlideshow 30s linear infinite;
+}
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
+
+/*Welcome*/
+
+.frame {
+  position: relative;
+  width: 350px;
+  height: 450px;
+  background: url(../images/pic.png);
+  margin: 0 auto;
+}
+
+.pic {
+  -webkit-animation: fadein 2s;
+  /*Safari,ChromeandOpera>12.1*/-moz-animation: fadein 10s;
+  /*Firefox<16*/-ms-animation: fadein 10s;
+  /*InternetExplorer*/-o-animation: fadein 10s;
+  /*Opera<12.1*/animation: fadein 10s;
+  position: absolute;
+  top: 4.5rem;
+  left: 50%;
+  width: 250px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(-50%, 0) rotate(-1deg);
+  -webkit-transform: translate(-50%, 0) rotate(-1deg);
+  -moz-transform: translate(-50%, 0) rotate(-1deg);
+  -ms-transform: translate(-50%, 0) rotate(-1deg);
+  -o-transform: translate(-50%, 0) rotate(-1deg);
+}
 @media only screen and (max-width: 1199px) {
   .logo-nav {
     display: inline-block;
