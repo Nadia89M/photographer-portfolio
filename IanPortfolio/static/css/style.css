@@ -1744,6 +1744,10 @@ a:hover {
   -o-transform: translate(-50%, 0) rotate(-1deg);
 }
 
+.pic2{
+  display: none;
+}
+
 @media only screen and (max-width: 1199px) {
   .logo-nav {
     display: inline-block;
@@ -1755,30 +1759,13 @@ a:hover {
 
 @media only screen and (max-width: 450px) {
   .frame {
-    position: relative;
-    background-image: none;
-    width: 175px;
-    height: 225px;
-    margin: 0 auto;
+    display: none;
   }
-  
   .pic {
-    -webkit-animation: fadein 2s;
-    /*Safari,ChromeandOpera>12.1*/-moz-animation: fadein 10s;
-    /*Firefox<16*/-ms-animation: fadein 10s;
-    /*InternetExplorer*/-o-animation: fadein 10s;
-    /*Opera<12.1*/animation: fadein 10s;
-    position: absolute;
-    top: 2.25rem;
-    left: 50%;
-    width: 125px;
-    height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(-50%, 0) rotate(0);
-    -webkit-transform: translate(-50%, 0) rotate(0);
-    -moz-transform: translate(-50%, 0) rotate(0);
-    -ms-transform: translate(-50%, 0) rotate(0);
-    -o-transform: translate(-50%, 0) rotate(0);
+    display: none;
+}
+.pic2 {
+  display: block;
+  margin: 0 auto;
 }
 }
