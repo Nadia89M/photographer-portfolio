@@ -1604,6 +1604,7 @@ a:hover {
 .quote {
   text-align: center;
   padding: 2rem;
+  font-size: 150%;
 }
 
 .quote span {
