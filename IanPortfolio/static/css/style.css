@@ -4,6 +4,7 @@ body {
   color: #4d4d4d;
   font-size: 1rem;
   text-align: justify;
+  position: relative;
 }
 
 ::-moz-selection {
@@ -1620,6 +1621,14 @@ a:hover {
   background-color: #dfedfc;
   text-align: center;
   margin-top: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-tearsheets {
+  display: none;
 }
 
 .quote p {
@@ -1649,6 +1658,10 @@ a:hover {
 
 .active1 a {
   color: #00782A !important;
+}
+
+.active2 a {
+  color: 	#FFD300 !important;
 }
 
 @keyframes fadein {
@@ -1769,4 +1782,95 @@ a:hover {
   display: block;
   margin: 0 auto;
 }
+}
+
+/*Tearsheets*/
+
+#outerDiv{
+  position: absolute;
+  left: 0px;
+  top: 240px;
+  height: 350px;
+  width: 100%;
+  /* background-color: hsl(210, 3%, 25%); */
+  overflow: hidden;
+  margin-bottom: 10rem;
+}
+
+#carousel{
+  position: absolute;
+  height: 100%;
+  width: 1710px;
+  margin: 10px;
+  /* background: linear-gradient(#2fa4e7 40%, #255d7c); */
+}
+
+.designs{
+  position:relative;
+  float: left;
+  width: 150px;
+  height: 90%;
+  margin: 10px;
+  margin-top: 25px;
+}
+.designs div{
+  
+  transition: width 0.25s, transform 0.25s;
+}
+.designs div:hover{
+  width: 175px;
+  transform: translateX(-10px);
+}
+
+.designs .image{
+  position: absolute;
+  top:0px;
+  height:85%;
+  width: 100%;
+}
+.designs .image img{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  cursor: pointer;
+}
+.designs .text{
+  position:absolute;
+  color:white;
+  bottom:0px;
+  height: 15%;
+  width: 100%;
+}
+p{
+  font-family: open sans;
+  text-align: center;
+  cursor: pointer;
+}
+.footer p{
+  margin-bottom: 0 !important;
+  font-size: 70%;
+}
+
+@media only screen and (max-width: 1199px) {
+  #outerDiv{
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  #outerDiv{
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #outerDiv{
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #outerDiv{
+    height: 150px;
+  }
 }

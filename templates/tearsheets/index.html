@@ -2,18 +2,22 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
-<div id="app">  
-    <div class="frame">
-        <h1 class="willow title"><span>Tearsheets</span></h1>
+<div class="tearsheets-container">
+    <div id="outerDiv">
+        <div id="carousel">
+            {% for tearsheet in tearsheets %}
+                {% if tearsheet.is_published %}
+                    <div class="designs">
+                        <div class="image">
+                            <img src="{{tearsheet.photo_main.url}}"></img>
+                        </div>
+                        <span class="text">
+                            <p>{{tearsheet.title}}</p>
+                        </span>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
-    <div class="flow" ref="flow">
-        {% for tearsheet in tearsheets %}
-            {% if tearsheet.is_published %}
-                <div v-for="tab of tabs" class="item"><img class="item" src="{{tearsheet.photo_main.url}}"/></div>
-            {% endif %}
-        {% endfor %}
-    </div>  
 </div>
-
 {% endblock %}

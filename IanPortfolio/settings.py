@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG_VALUE')
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://ian-macaulay.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -78,11 +78,12 @@ WSGI_APPLICATION = 'IanPortfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'iandb',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_NAME'),
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': 'localhost'
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 

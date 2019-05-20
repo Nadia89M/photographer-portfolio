@@ -72,7 +72,10 @@
               <li><a href="#">Work</a></li>
               <li><a href="#">Recent Activity</a></li>
               <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Tearsheets</a></li>
+              <li
+              {% if 'tearsheets' in request.path %} 
+                class="active active2" 
+              {% endif %}><a href="{% url 'tearsheets' %}">Tearsheets</a></li>
               <li><a href="#">Exhibitions</a></li>
               <li><a href="#">Elements</a></li>
               <li><a href="#">Game</a></li>

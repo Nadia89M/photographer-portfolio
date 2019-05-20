@@ -95,3 +95,70 @@ $(document).ready(function() {
     });
   });
 
+/*Tearsheets*/
+
+/*Mouse pos Requires JQuery / can be removed*/
+
+var carousel = document.querySelector('#carousel');
+var outerDiv = document.querySelector('#outerDiv');
+var i = 0;
+var j;
+var accelerate;
+var val;  
+var isHovered;
+var direction;
+var lastVal;
+
+setInterval(function(){
+  $(outerDiv).mousemove(function(){
+    mousePerc = (event.clientX/outerDiv.clientWidth) -0.5; 
+  accelerate = 25*mousePerc;
+  val = accelerate || 2;
+    if(val < 0){
+  direction = "left"
+    }else {
+  direction = "right"
+    }
+  })
+  
+    var isHovered = $(outerDiv).is(":hover"); // returns true or false
+
+ 
+  if( val == null || val == undefined){
+    val = 2;
+  }
+  
+  if(isHovered == false && direction == "left"){
+    val = lastVal + 0.2;
+    if (val > -2){
+    val = -2
+    }
+  }else if (isHovered == false && direction == "right"){
+    val = lastVal - 0.2;
+    if(val < 2){
+      val = 2
+    }
+  }
+  
+  lastVal = val;
+  i = i+(val);
+  
+  
+  
+  var wid = carousel.clientWidth;
+  var outerWid = outerDiv.clientWidth;
+  if (i < 0){
+    i=0;
+  }
+  if (i > wid - outerWid){
+    i = wid - outerWid;
+  }
+  updatePos(-i); 
+},18);
+
+
+function updatePos(k){
+    
+  carousel.style.transform = "translateX("+(k)+"px)";
+  return k;
+};
