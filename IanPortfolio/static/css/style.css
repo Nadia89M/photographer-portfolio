@@ -1851,13 +1851,7 @@ p{
   font-size: 70%;
 }
 
-@media only screen and (max-width: 1199px) {
-  #outerDiv{
-    height: 250px;
-  }
-}
-
-@media only screen and (max-width: 1224px) {
+/* @media only screen and (max-width: 1224px) {
   #outerDiv{
     height: 250px;
   }
@@ -1873,4 +1867,4 @@ p{
   #outerDiv{
     height: 150px;
   }
-}
+} */
