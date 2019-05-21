@@ -1870,3 +1870,18 @@ a:hover {
     height: 16rem;
   }
 }
+
+/*Works*/
+
+.small {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .small {
+    display: block;
+  }
+  .large{
+    display: none;
+  }
+}
