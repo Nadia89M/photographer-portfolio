@@ -1851,9 +1851,15 @@ p{
   font-size: 70%;
 }
 
-/* @media only screen and (max-width: 1224px) {
+@media only screen and (max-width: 1224px) {
   #outerDiv{
     height: 250px;
+  }
+  .designs{
+    height: 100%;
+  }
+  .designs .image{
+    height:100%;
   }
 }
 
@@ -1861,10 +1867,22 @@ p{
   #outerDiv{
     height: 200px;
   }
+  .designs{
+    height: 100%;
+  }
+  .designs .image{
+    height:100%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   #outerDiv{
     height: 150px;
   }
-} */
+  .designs{
+    height: 100%;
+  }
+  .designs .image{
+    height:100%;
+  }
+}
