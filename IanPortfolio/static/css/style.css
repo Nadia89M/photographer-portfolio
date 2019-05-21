@@ -1839,7 +1839,7 @@ a:hover {
   color:black;
   text-transform: capitalize;
   bottom:-30px;
-  height: 20%;
+  height: 25%;
   width: 100%;
   text-align: center;
 }
@@ -1857,12 +1857,12 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   #outerDiv{
-    height: 19rem;
+    height: 18rem;
   }
 }
 
 @media only screen and (max-width: 320px) {
   #outerDiv{
-    height: 18rem;
+    height: 16rem;
   }
 }
