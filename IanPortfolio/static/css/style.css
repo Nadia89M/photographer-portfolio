@@ -1790,7 +1790,7 @@ a:hover {
   position: absolute;
   left: 0px;
   top: 240px;
-  height: 350px;
+  height: 21rem;
   width: 100%;
   /* background-color: hsl(210, 3%, 25%); */
   overflow: hidden;
@@ -1847,40 +1847,4 @@ a:hover {
 .footer p{
   margin-bottom: 0 !important;
   font-size: 70%;
-}
-
-@media only screen and (max-width: 1224px) {
-  #outerDiv{
-    height: 250px;
-  }
-  .designs{
-    height: 100%;
-  }
-  .designs .image{
-    height:100%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #outerDiv{
-    height: 200px;
-  }
-  .designs{
-    height: 100%;
-  }
-  .designs .image{
-    height:100%;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  #outerDiv{
-    height: 150px;
-  }
-  .designs{
-    height: 100%;
-  }
-  .designs .image{
-    height:100%;
-  }
 }
