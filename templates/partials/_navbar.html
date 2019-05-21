@@ -69,7 +69,10 @@
                 {% if 'welcome' in request.path %} 
                   class="active active1" 
                 {% endif %}><a href="{% url 'welcome' %}">Welcome</a></li>
-              <li><a href="#">Work</a></li>
+                <li
+                {% if 'works' in request.path %} 
+                  class="active active3" 
+                {% endif %}><a href="{% url 'works' %}">Works</a></li>
               <li><a href="#">Recent Activity</a></li>
               <li><a href="#">Testimonials</a></li>
               <li
