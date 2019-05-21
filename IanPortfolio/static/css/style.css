@@ -1848,3 +1848,21 @@ a:hover {
   margin-bottom: 0 !important;
   font-size: 70%;
 }
+
+@media only screen and (max-width: 1224px) {
+  #outerDiv{
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #outerDiv{
+    height: 19rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #outerDiv{
+    height: 18rem;
+  }
+}
