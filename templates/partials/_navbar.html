@@ -69,18 +69,30 @@
                 {% if 'welcome' in request.path %} 
                   class="active active1" 
                 {% endif %}><a href="{% url 'welcome' %}">Welcome</a></li>
-                <li
+              <li
                 {% if 'works' in request.path %} 
                   class="active active3" 
                 {% endif %}><a href="{% url 'works' %}">Works</a></li>
-              <li><a href="#">Recent Activity</a></li>
-              <li><a href="#">Testimonials</a></li>
+              <li
+                {% if 'recent_activities' in request.path %} 
+                  class="active active4" 
+                {% endif %}><a href="{% url 'activities' %}">Recent Activity</a></li>
+              <li
+                {% if 'testimonials' in request.path %} 
+                  class="active active6" 
+                {% endif %}><a href="{% url 'testimonials' %}">Testimonials</a></li>
               <li
               {% if 'tearsheets' in request.path %} 
                 class="active active2" 
               {% endif %}><a href="{% url 'tearsheets' %}">Tearsheets</a></li>
-              <li><a href="#">Exhibitions</a></li>
-              <li><a href="#">Elements</a></li>
+              <li
+              {% if 'exhibitions' in request.path %} 
+                class="active active7" 
+              {% endif %}><a href="{% url 'exhibitions' %}">Exhibitions</a></li>
+              <li
+              {% if 'elements' in request.path %} 
+                class="active active5" 
+              {% endif %}><a href="{% url 'posts' %}">Elements</a></li>
               <li><a href="#">Game</a></li>
             </ul>
           </nav>

@@ -4,7 +4,7 @@ from .models import Work
 # Create your views here.
 
 def index(request):
-    works = Work.objects.all()
+    works = Work.objects.order_by('-id').reverse()
     context = {
         'works': works,
     }

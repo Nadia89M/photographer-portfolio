@@ -39,9 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'storages',
+    'ckeditor',
     'pages',
     'tearsheets',
     'works',
+    'activities',
+    'posts',
+    'testimonials',
+    'exhibitions',
 ]
 
 MIDDLEWARE = [
@@ -147,5 +152,7 @@ AWS_QUERYSTRING_AUTH = False
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
 
 django_heroku.settings(locals())
