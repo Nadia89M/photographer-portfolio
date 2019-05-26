@@ -2064,3 +2064,10 @@ a:hover {
 .post-title {
   text-transform: capitalize !important;
 }
+
+
+
+
+body {
+  text-align: justify !important;
+}
