@@ -2071,3 +2071,83 @@ a:hover {
 .justify {
   text-align: justify !important;
 }
+
+/*Exhibitions*/
+
+.container-exh {
+  position: relative;
+  overflow: hidden;
+  margin: 100px auto;
+  width: 800px;
+  height: 500px;
+}
+
+.container-exh img {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  z-index: -60;
+  width:100%
+}
+ 
+.container-exh li img {
+  position: absolute;
+  top: 0;
+  left: 1150px;
+  z-index: -50;
+  transition: all .3s ease;
+}
+
+.nav-exh {
+  width: 170px;
+  height: 500px;
+/*   background: #fff; */
+}
+
+ 
+.ul-exh {
+  width: 400px;
+  height: auto;
+  list-style: none;
+  padding-top: 50px;
+}
+
+.li-exh{
+/*   display:flex;  */
+  position:relative;}
+
+.li-exh a {
+  display: block;
+  padding-left: 20px;
+/*   width: 150px;
+  height: 30px; */
+  margin-bottom:30px;
+/*   background: white; */
+  color: black;
+  text-decoration: none;
+}
+
+.li-exh span{
+width:300px;
+top:50%; 
+transform:translatey(-50%);
+position:absolute;
+opacity:.5;
+}
+ 
+/* li:nth-child(1) {
+  padding-top: 50px;
+} */
+
+.li-exh a:hover > span{
+  opacity:1;
+ 
+/*   background: #eee; */
+/*   border-bottom:1px solid red;
+  position:absolute;
+  right:10px; */
+}
+ 
+.li-exh a:hover + img {
+  left: 400px;
+}
