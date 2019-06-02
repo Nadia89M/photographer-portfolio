@@ -2077,7 +2077,7 @@ a:hover {
 .container-exh {
   position: relative;
   overflow: hidden;
-  margin: 100px auto;
+  margin: 0 auto;
   width: 800px;
   height: 500px;
 }

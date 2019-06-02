@@ -18,9 +18,8 @@
                     <li class="li-exh">
                         {% for exhibition in exhibitions %}
                             {% if exhibition.is_published %}
-                                <p>{{exhibition.date | date:"Y"}}</p>
-                                <a href="#"><span></span>{{exhibition.description}}</a>
-                                <img src="{{exhibition.photo_main.url}}" alt="" class="exh-img">
+                                <a href="#"><span></span>{{exhibition.date | date:"Y"}} - {{exhibition.title}}</a>
+                                <img src="{{exhibition.photo_main.url}}" alt="" class="">
                             {% endif %}
                         {% endfor %}
                     </li>
