@@ -2079,7 +2079,7 @@ a:hover {
   overflow: hidden;
   margin: 0 auto;
   width: 800px;
-  height: 500px;
+  height: 100%;
 }
 
 .container-exh img {
@@ -2100,7 +2100,8 @@ a:hover {
 
 .nav-exh {
   width: 170px;
-  height: 500px;
+  height: auto;
+  margin-bottom: 250px;
 /*   background: #fff; */
 }
 
@@ -2121,7 +2122,7 @@ a:hover {
   padding-left: 20px;
 /*   width: 150px;
   height: 30px; */
-  margin-bottom:30px;
+  margin: 15px 0;
 /*   background: white; */
   color: black;
   text-decoration: none;
@@ -2150,4 +2151,8 @@ opacity:.5;
  
 .li-exh a:hover + img {
   left: 400px;
+}
+
+.exh-line:hover {
+  border-bottom: 2px solid #dfedfc;
 }

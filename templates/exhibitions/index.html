@@ -18,14 +18,8 @@
                     <li class="li-exh">
                         {% for exhibition in exhibitions %}
                         <div class="row">
-                            <div class="col-6">
-                                    {% if exhibition.is_published and exhibition.id <= 10 %}
-                                    <a href="#"><span></span>{{exhibition.date | date:"Y"}} - {{exhibition.title}}</a>
-                                    <img src="{{exhibition.photo_main.url}}" alt="" class="">
-                                {% endif %}
-                            </div>
-                            <div class="col-6">
-                                    {% if exhibition.is_published and exhibition.id > 10 %}
+                            <div class="col-6 exh-line">
+                                    {% if exhibition.is_published %}
                                     <a href="#"><span></span>{{exhibition.date | date:"Y"}} - {{exhibition.title}}</a>
                                     <img src="{{exhibition.photo_main.url}}" alt="" class="">
                                 {% endif %}
