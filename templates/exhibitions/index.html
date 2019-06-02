@@ -18,7 +18,7 @@
                     <li class="li-exh">
                         {% for exhibition in exhibitions %}
                         <div class="row">
-                            <div class="col-6 exh-line">
+                            <div class="col-7 exh-line">
                                     {% if exhibition.is_published %}
                                     <a href="#"><span></span>{{exhibition.date | date:"Y"}} - {{exhibition.title}}</a>
                                     <img src="{{exhibition.photo_main.url}}" alt="" class="">
