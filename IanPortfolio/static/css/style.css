@@ -2150,7 +2150,8 @@ opacity:.5;
 }
  
 .li-exh a:hover + img {
-  left: 400px;
+  left: 500px;
+  top: -70px;
 }
 
 .exh-line:hover {
