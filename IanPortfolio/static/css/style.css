@@ -1716,17 +1716,16 @@ a:hover {
 /*Header Carousel*/
 
 .tech-slideshow {
-  height: 60vh;  
+  height: 28rem;  
   max-width: 2000px;  
   margin: 0 auto;
   position: relative;  
   overflow: hidden;  
   transform: translate3d(0, 0, 0);
-  margin-top: 2rem;
   border: 0.5rem solid #dfedfc;
 }
 .tech-slideshow > div {
-  height: 60vh;  
+  height: 28rem;  
   width: 8000px;  
   transform: translate3d(0, 0, 0);
   background: url(../images/panoramic.png);
@@ -1893,13 +1892,100 @@ a:hover {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  .small {
-    display: block;
-  }
-  .large{
-    display: none;
-  }
+.work-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.work-img{
+  width: 37.5rem;
+  height: 28rem;
+}
+
+.square-container{
+  width:37.5rem;
+  margin: 0 auto;
+}
+
+
+/* The fun begins */
+.square
+{
+  position:relative;
+  width:37.5rem;
+  height:28rem;
+  background:#dfedfc;
+  padding:10px;  
+  /* Assign the perspective to enable 3d Transform */
+  	perspective :600px;
+	-webkit-perspective: 600px;
+    -moz-perspective: 600px;
+  
+}
+
+.square .front
+{
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index:9;  
+ 
+  /* Assign The 3D Transform */
+ -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    
+  /* Transition Effect */
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+/* .flipping class for flip effect using jquery */
+
+.square.flipping .front
+{
+  z-index:9;
+  -webkit-transform:rotateX(180deg);
+  -moz-transform:rotateX(180deg);
+}
+
+
+.square .back
+{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width:37.5rem;
+  height:28rem;
+  background:#dfedfc;
+  overflow:hidden;
+  text-align:center;
+  z-index:8;
+  
+  /* Assign The 3D Transform */
+    -webkit-transform:rotateX(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform:rotateX(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+  
+  /* Transition Effect */
+  transition:all .2s ease-in-out;
+  -webkit-transition:all .2s ease-in-out;
+  -moz-transition:all .2s ease-in-out;
+  -o-transition:all .2s ease-in-out;
+}
+
+.square.flipping .back
+{
+  z-index:10;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform:rotateX(0deg) rotateY(0deg);
 }
 
 /*Activities*/
@@ -1917,155 +2003,45 @@ a:hover {
   border-radius: 5%;
 }
 
+.btn-light-blue {
+  background-color: #0098D4 !important;
+  color: white;
+  border-radius: 5%;
+}
+
+.btn-light-blue:hover {
+  background-color: white !important;
+  color: #0098D4;
+  border: 1px solid #0098D4;
+  border-radius: 5%;
+}
+
+.btn-orange {
+  background-color: #EE7C0E  !important;
+  color: white;
+  border-radius: 5%;
+}
+
+.btn-orange:hover {
+  background-color: white !important;
+  color: #EE7C0E ;
+  border: 1px solid #EE7C0E ;
+  border-radius: 5%;
+}
+
 /*Testimonials*/
-.snip1314 {
+
+.test-title {
   text-transform: uppercase;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  padding: 6px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  box-shadow: none !important;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #ffffff;
-  font-size: 16px;
-}
-.snip1314 * {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-.snip1314 img {
-  max-width: 100%;
-  vertical-align: top;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
-.snip1314 .border {
-  position: absolute;
-  opacity: 0.45;
-  z-index: 1;
-}
-.snip1314 .border:before,
-.snip1314 .border:after,
-.snip1314 .border div:before,
-.snip1314 .border div:after {
-  background-color: blue;
-  position: absolute;
-  content: "";
-  display: block;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-.snip1314 .border:before,
-.snip1314 .border:after {
-  width: 0;
-  height: 1px;
-}
-.snip1314 .border div:before,
-.snip1314 .border div:after {
-  width: 1px;
-  height: 0;
-}
-.snip1314 .border.one {
-  left: 0;
-  top: 0;
-  right: 12px;
-  bottom: 12px;
-}
-.snip1314 .border.one:before,
-.snip1314 .border.one div:before {
-  left: 0;
-  top: 0;
-}
-.snip1314 .border.one:after,
-.snip1314 .border.one div:after {
-  bottom: 0;
-  right: 0;
-}
-.snip1314 .border.two {
-  left: 12px;
-  top: 12px;
-  right: 0;
-  bottom: 0;
-}
-.snip1314 .border.two:before,
-.snip1314 .border.two div:before {
-  right: 0;
-  top: 0;
-}
-.snip1314 .border.two:after,
-.snip1314 .border.two div:after {
-  bottom: 0;
-  left: 0;
-}
-.snip1314 figcaption {
-  left: 6px;
-  right: 6px;
-  top: 6px;
-  bottom: 6px;
-  position: absolute;
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.snip1314 blockquote {
-  font-family: 'Ovo', Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 500;
-  line-height: 1.6em;
-  font-style: italic;
-  letter-spacing: 1px;
-  padding: 0;
-  margin: 0;
-}
-.snip1314 h5 {
-  display: inline-block;
-  font-size: 1em;
-}
-.snip1314 h5 span {
-  font-weight: normal;
-  margin-left: 5px;
-  opacity: 0.5;
-}
-.snip1314 h5:before {
-  content: '- ';
-}
-.snip1314 a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  z-index: 1;
-}
-.snip1314:hover .border:before,
-.snip1314.hover .border:before,
-.snip1314:hover .border:after,
-.snip1314.hover .border:after {
-  width: 100%;
-}
-.snip1314:hover .border div:before,
-.snip1314.hover .border div:before,
-.snip1314:hover .border div:after,
-.snip1314.hover .border div:after {
-  height: 100%;
-}
-.snip1314:hover figcaption,
-.snip1314.hover figcaption {
-  opacity: 0.9;
-  background-color: #dfedfc;
-  color: black;
 }
 
-.post-title {
-  text-transform: capitalize !important;
+.test-border {
+  border: 2px solid white;
 }
 
-
+.test-border:hover {
+  border: 2px solid #dfedfc;
+}
 
 /*Justify*/
 .justify {
@@ -2152,6 +2128,11 @@ opacity:.5;
 .li-exh a:hover + img {
   left: 500px;
   top: -70px;
+}
+
+.li-exh a:hover + .img-test {
+  left: 500px;
+  top: 25%;
 }
 
 .exh-line:hover {

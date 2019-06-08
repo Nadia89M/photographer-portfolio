@@ -70,9 +70,9 @@
                   class="active active1" 
                 {% endif %}><a href="{% url 'welcome' %}">Welcome</a></li>
               <li
-                {% if 'works' in request.path %} 
+                {% if 'work' in request.path %} 
                   class="active active3" 
-                {% endif %}><a href="{% url 'works' %}">Works</a></li>
+                {% endif %}><a href="{% url 'works' %}">Work</a></li>
               <li
                 {% if 'recent_activities' in request.path %} 
                   class="active active4" 

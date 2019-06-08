@@ -162,3 +162,13 @@ function updatePos(k){
   carousel.style.transform = "translateX("+(k)+"px)";
   return k;
 };
+
+
+$(".square").hover(function(){
+  // if mouse hover then add .flipping class
+ $(this).addClass("flipping");
+
+},function(){
+ // if mouse unhover then remove the .flipping class
+ $(this).removeClass("flipping");
+});

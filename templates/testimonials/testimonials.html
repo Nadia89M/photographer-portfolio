@@ -2,34 +2,40 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}
 {% block content %}
-<div class="container py-5">
-    {% if testimonials %}
-        <div class= "row">
-        {% for testimonial in testimonials %}
-            {% if testimonial.is_published %}
-                <div class="col-md-4">
-                    <figure class="snip1314"><img src="{{testimonial.photo_main.url}}" alt="sample13"/>
-                        <div class="border one">
-                            <div></div>
+<section id="testimonials" class="py-5">
+    <div class="container">
+        <!-- <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="py-5 blog-title post-title title"></h2>
+            </div>
+        </div> -->
+        {% if testimonials %}
+            <div class="container-exh">
+                <nav class="nav-exh">
+                    <ul class="ul-exh">
+                    <li class="li-exh">
+                        {% for testimonial in testimonials %}
+                        <div class="row">
+                            <div class="col-10 test-border">
+                                    {% if testimonial.is_published %}
+                                    <a class="text-center" href="#"><span></span><b class="test-title">{{testimonial.name}} - {{testimonial.title}}</b><br/>  <p>{{testimonial.testimonial}}</p></a>
+                                    <img src="{{testimonial.photo_main.url}}" alt="" class="img-test">
+                                {% endif %}
+                            </div>
                         </div>
-                        <div class="border two">
-                            <div></div>
-                        </div>
-                        <figcaption class="text-center align-middle">
-                            <blockquote><span>{{testimonial.name}}</span> - <span>{{testimonial.title}}</span></h5>
-                        </figcaption><a href="{{ testimonial.id }}"></a>
-                    </figure>
+                        {% endfor %}
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+         {% else %}
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <p>No Exhibitions Available</p>
                 </div>
-            {% endif %}
-        {% endfor %}
-        </div>
-    {% else %}
-    <div class="row text-center">
-        <div class="col-md-12">
-            <p>No Testimonials Available</p>
-        </div>
+            </div>
+        {% endif %}
     </div>
-    {% endif %}
-</div>
+</section>
 
 {% endblock %}
