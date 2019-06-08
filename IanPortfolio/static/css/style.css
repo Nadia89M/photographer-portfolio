@@ -1684,6 +1684,10 @@ a:hover {
   color: 	#F3A9BB !important;
 }
 
+.active8 a {
+  color: 	#660066 !important;
+}
+
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }

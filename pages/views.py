@@ -6,3 +6,6 @@ def index(request):
 
 def welcome(request):
     return render(request, 'pages/welcome.html', {})
+
+def game(request):
+    return render(request, 'pages/game.html', {})

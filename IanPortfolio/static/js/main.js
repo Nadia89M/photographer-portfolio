@@ -163,12 +163,15 @@ function updatePos(k){
   return k;
 };
 
+/*Fix JQuery*/
+$("*").on('click', $.proxy(function() {
+  var isHovered = $('.tooltip').filter(function() {
+      return $(this).is(":hover");
+  });
 
-$(".square").hover(function(){
-  // if mouse hover then add .flipping class
- $(this).addClass("flipping");
-
-},function(){
- // if mouse unhover then remove the .flipping class
- $(this).removeClass("flipping");
-});
+  if ( isHovered.length > 0 ) {
+    console.log('Hovered!');
+  } else { 
+    console.log('Where is my element!?'); 
+  }
+}, this));

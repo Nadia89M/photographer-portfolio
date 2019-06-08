@@ -93,7 +93,10 @@
               {% if 'elements' in request.path %} 
                 class="active active5" 
               {% endif %}><a href="{% url 'posts' %}">Elements</a></li>
-              <li><a href="#">Game</a></li>
+              <li
+              {% if 'game' in request.path %} 
+                class="active active8" 
+              {% endif %}><a href="{% url 'game' %}">Game</a></li>
             </ul>
           </nav>
         </div>
