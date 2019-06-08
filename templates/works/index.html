@@ -13,14 +13,14 @@
         <div class="row justify-content-center">
             {% for work in works %}
                 {% if work.is_published %}
-                        <div class="col-12 mb-3">
+                        <div class="col-12 mb-5">
                             <div class="square-container">
                                 <div class="square">
                                     <div class="front">
                                         <img class="work-img" src="{{work.photo_main.url}}">
                                     </div>
                                     <div class="back">
-                                        <p class="p-5">
+                                        <p class="p-3">
                                             <span class="work-title">{{work.title}}</span><br/>
                                             {{work.description}}
                                         </p>
