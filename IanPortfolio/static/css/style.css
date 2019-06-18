@@ -1692,6 +1692,14 @@ a:hover {
   color: #660066 !important;
 }
 
+.orange-title {
+  color: #ee7c0e;
+}
+
+.light-blue-title {
+  color: #0098d4;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;

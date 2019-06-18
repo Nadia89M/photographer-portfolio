@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <!-- Photos -->
 <section id="activity" class="py-5">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-12  py-5">
-                <h2 class="title blog-title post-title">{{activity.title}}</h2>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-12 mb-3">
-                <div class="card">
-                    <img src="{{activity.photo_main.url}}" alt="" class="mb-3 img-fluid card-img-top">
-                    <div class="card-body">
-                        <p class="card-text justify">{{ activity.content|safe}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12  py-5">
+        <h2 class="title blog-title post-title light-blue-title ">
+          {{ activity.title }}
+        </h2>
+      </div>
     </div>
+    <div class="row text-center">
+      <div class="col-md-12 mb-3">
+        <div class="card">
+          <img
+            src="{{ activity.photo_main.url }}"
+            alt=""
+            class="mb-3 img-fluid card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text justify">{{ activity.content | safe }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 {% endblock %}
