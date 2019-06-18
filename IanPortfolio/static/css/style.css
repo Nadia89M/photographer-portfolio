@@ -1938,6 +1938,11 @@ a:hover {
   margin: 0 auto;
 }
 
+.square-container-exh {
+  width: 14rem;
+  margin: 0 auto;
+}
+
 /* The fun begins */
 .square {
   position: relative;
@@ -1949,6 +1954,11 @@ a:hover {
   perspective: 600px;
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
+}
+
+.square-exh {
+  width: 14rem;
+  height: 18rem;
 }
 
 .square .front {
@@ -2003,6 +2013,11 @@ a:hover {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
+}
+
+.square-exh .back {
+  width: 14rem;
+  height: 18rem;
 }
 
 .square.flipping .back {
