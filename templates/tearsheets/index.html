@@ -1,6 +1,45 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- Exhibitions -->
+<section id="exhibitions" class="py-5">
+  <div class="container">
+    <!-- <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="py-5 blog-title post-title title"></h2>
+            </div>
+        </div> -->
 
+    <div id="container">
+      <ul id="lijst">
+        {% if tearsheets %} {% for tearsheet in tearsheets %}
+        <li class="element 
+        {% if tearsheet.is_vertical %}
+          vertical 
+        {% else %} 
+          horizontal
+        {% endif %}">
+          <ul>
+            <img class="work-img img-fluid" src="{{ tearsheet.photo_main.url }}" />
+            <li class="jaartal"></li>
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
+
+
+    </div>
+    <div class="text-center">
+      <button id="later">
+        <</button> <button id="vroeger">>
+      </button>
+    </div>
+    {% else %}
+    <div class="row text-center">
+      <div class="col-md-12">
+        <p>No Tearsheets Available</p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
 {% endblock %}
