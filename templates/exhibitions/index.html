@@ -37,7 +37,7 @@
               <li class="ondertitel">{{exhibition.title}}</li>
             </ul>
           </li>
-          {% endfor %} {% else %}
+          {% endfor %}
         </ul>
 
 
@@ -46,6 +46,7 @@
       <button id="later"></button>
       <button id="vroeger">></button>
     </div>
+    {% else %}
     <div class="row text-center">
       <div class="col-md-12">
         <p>No Exhibitions Available</p>
