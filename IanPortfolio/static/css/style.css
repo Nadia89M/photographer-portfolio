@@ -1700,6 +1700,10 @@ a:hover {
   color: #0098d4;
 }
 
+.red-title {
+  color: #e32017;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
