@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
-<div class="tearsheets-container">
-    <div id="outerDiv">
-        <div id="carousel">
-            {% for tearsheet in tearsheets %}
-                {% if tearsheet.is_published %}
-                    <div class="designs">
-                        <div class="image">
-                            <img src="{{tearsheet.photo_main.url}}"></img>
-                        </div>
-                    </div>
-                {% endif %}
-            {% endfor %}
-        </div>
-    </div>
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="carouselOfImages">
+  {% for tearsheet in tearsheets %}
+  <div
+    class="carouselImage"
+    style="background:url({{
+      tearsheet.photo_main.url
+    }}); background-size:cover;"
+  ></div>
+  {% endfor %}
 </div>
 {% endblock %}
