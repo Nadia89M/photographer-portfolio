@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}
-{% block content %}
-<!-- Works -->
+{% extends 'base.html' %} {% block content %}
+<!-- Photos -->
 <section id="works" class="py-5">
-    <div class="container">
-        <!-- <div class="row text-center">
+  <div class="container">
+    <!-- <div class="row text-center">
             <div class="col-md-12">
                 <h2 class="py-5 blog-title post-title title"></h2>
             </div>
         </div> -->
-        {% if works %}
-        <div class="row justify-content-center">
-            {% for work in works %}
-                {% if work.is_published %}
-                        <div class="col-12 mb-5">
-                            <div class="square-container">
-                                <div class="square">
-                                    <div class="front">
-                                        <img class="work-img" src="{{work.photo_main.url}}">
-                                    </div>
-                                    <div class="back">
-                                        <p class="p-3">
-                                            <span class="work-title">{{work.title}}</span><br/>
-                                            {{work.description}}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
-                {% endif %}
-            {% endfor %}
-        </div>     
-        {% else %}
-        <div class="row text-center">
-            <div class="col-12">
-                <p>No Works Available</p>
-            </div>
+    {% if works %} {% for work in works %} {% if work.is_published %} {% if not
+    forloop.counter|divisibleby:2 %}
+    <div class="row text-center post-container py-3">
+      <div class="col-md-5 mb-3">
+        <img src="{{ work.photo_main.url }}" alt="" class="mb-3 img-fluid" />
+      </div>
+      <div class="col-md-7 mb-3">
+        <div class="body">
+          <h5 class="card-title">{{ work.title }}{{ work.id }}</h5>
+          <p class="card-text">{{ work.description }}</p>
+          <!-- <a href="{{ work.id }}" class="btn btn-danger">Read More</a> -->
         </div>
-        {% endif %}
+      </div>
     </div>
+    {% else %}
+    <div class="row text-center post-container py-3">
+      <div class="col-md-7 mb-3">
+        <div class="body">
+          <h5 class="card-title">{{ work.title }}</h5>
+          <p class="card-text">{{ work.description }}</p>
+          <!-- <a href="{{ work.id }}" class="btn btn-danger">Read More</a> -->
+        </div>
+      </div>
+      <div class="col-md-5 mb-3">
+        <img src="{{ work.photo_main.url }}" alt="" class="mb-3 img-fluid" />
+      </div>
+    </div>
+    {% endif %} {% endif %} {% endfor %} {% else %}
+    <div class="row text-center">
+      <div class="col-md-12">
+        <p>No Works Available</p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
 </section>
 {% endblock %}
