@@ -14,13 +14,13 @@
         {% if tearsheets %} {% for tearsheet in tearsheets %}
         <li class="element 
         {% if tearsheet.is_vertical %}
-          vertical 
+          vertical-v 
         {% else %} 
-          horizontal
+          horizontal-h
         {% endif %}">
           <ul>
             <img class="work-img img-fluid" src="{{ tearsheet.photo_main.url }}" />
-            <li class="jaartal"></li>
+            <li class="jaartal j-yellow"></li>
           </ul>
         </li>
         {% endfor %}
