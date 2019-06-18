@@ -8,8 +8,7 @@
                 <h2 class="py-5 blog-title post-title title"></h2>
             </div>
         </div> -->
-    {% if works %} {% for work in works %} {% if work.is_published %} {% if not
-        forloop.counter|divisibleby:2 %}
+    {% if works %} {% for work in works %} {% if work.is_published %}
     <div class="row text-center post-container">
       <div class="col-md-5 mb-3">
         <img src="{{ work.photo_main.url }}" alt="" class="mb-3 img-fluid" />
@@ -21,18 +20,6 @@
         </div>
       </div>
     </div>
-    {% else %}
-    <div class="row text-center post-container py-3">
-        <div class="col-md-7 mb-3">
-            <div class="body">
-            <h5 class="card-title">{{ work.title }}</h5>
-            <p class="card-text">{{ work.description }}</p>
-        </div>
-        <div class="col-md-5 mb-3">
-            <img src="{{ work.photo_main.url }}" alt="" class="mb-3 img-fluid" />
-        </div>
-    </div>
-    {% endif %}
     {% endif %} {% endfor %} {% else %}
     <div class="row text-center">
       <div class="col-md-12">
