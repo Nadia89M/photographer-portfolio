@@ -8,7 +8,7 @@
                 <h2 class="py-5 blog-title post-title title"></h2>
             </div>
         </div> -->
-    {% if works %} {% for work in works %} {% if work.is_published %}{% if not
+    {% if works %} {% for work in works %} {% if not
     forloop.counter|divisibleby:2 %}
     <div class="row text-center post-container py-3">
       <div class="col-md-5 mb-3">
@@ -35,7 +35,7 @@
         <img src="{{ work.photo_main.url }}" alt="" class="mb-3 img-fluid" />
       </div>
     </div>
-    {% endif %} {% endif %} {% endfor %} {% else %}
+    {% endif %} {% endfor %} {% else %}
     <div class="row text-center">
       <div class="col-md-12">
         <p>No Works Available</p>
