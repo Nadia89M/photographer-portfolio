@@ -12,7 +12,11 @@
     <div id="container">
       <ul id="lijst">
         {% if exhibitions %} {% for exhibition in exhibitions %}
-        <li class="element">
+        <li class="element 
+        {% if exhibition.is_vertical %}
+          vertical 
+        {% else %} 
+          horizontal">
           <ul>
             <img class="work-img img-fluid" src="{{ exhibition.photo_main.url }}" />
             <li class="jaartal">{{exhibition.date | date:"Y"}}</li>
