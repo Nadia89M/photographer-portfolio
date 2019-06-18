@@ -16,7 +16,8 @@
         {% if exhibition.is_vertical %}
           vertical 
         {% else %} 
-          horizontal">
+          horizontal
+        {% endif %}">
           <ul>
             <img class="work-img img-fluid" src="{{ exhibition.photo_main.url }}" />
             <li class="jaartal">{{exhibition.date | date:"Y"}}</li>
