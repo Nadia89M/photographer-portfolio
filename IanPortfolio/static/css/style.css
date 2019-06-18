@@ -2297,7 +2297,9 @@ button:focus {
 }
 
 .vertical-v {
-  transition: transform .2s; /* Animation */
+  transform-origin: center;
+  transform: scale(1);
+  transition: transform 1s ease;
   width: 250px;
 }
 
@@ -2306,7 +2308,9 @@ button:focus {
 }
 
 .horizontal-h {
-  transition: transform .2s; /* Animation */
+  transform-origin: center;
+  transform: scale(1);
+  transition: transform 1s ease;
   width: 350px;
 }
 
