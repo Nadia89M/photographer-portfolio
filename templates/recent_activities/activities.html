@@ -10,26 +10,22 @@
         </div> -->
     {% if activities %} {% for activity in activities %} {% if
     activity.is_published %}
-    <div class="row text-center py-3">
+    <div class="row text-center post-container">
       <div class="col-md-5 mb-3">
-        <img
-          src="{{ activity.photo_main.url }}"
-          alt=""
-          class="mb-3 img-fluid"
-        />
+        <img src="{{ post.photo_main.url }}" alt="" class="mb-3 img-fluid" />
       </div>
       <div class="col-md-7 mb-3">
         <div class="body">
           <h5 class="card-title light-blue-title">{{ activity.title }}</h5>
           <p class="card-text justify">{{ activity.description }}</p>
-          <a href="{{ activity.id }}" class="btn btn-light-blue">Read More</a>
+          <a href="{{ activity.id }}" class="btn btn-orange">Read More</a>
         </div>
       </div>
     </div>
     {% endif %} {% endfor %} {% else %}
     <div class="row text-center">
       <div class="col-md-12">
-        <p>No Activities Available</p>
+        <p>No Activity Available</p>
       </div>
     </div>
     {% endif %}
