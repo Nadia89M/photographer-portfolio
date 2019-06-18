@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-{% extends 'base.html' %} {% load static %} {% block content %} {% for tearsheet
-in tearsheets %}
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% for tearsheet in tearsheets %}
 <figure class="snip1511">
   <div class="image">
     <img src="{{ tearsheet.photo_main.url }}" alt="{{ tearsheet.title }}" />
@@ -10,4 +12,5 @@ in tearsheets %}
   </figcaption>
   <a href="#"></a>
 </figure>
-{% endfor %} {% endblock %}
+{% endfor %}
+{% endblock %}
