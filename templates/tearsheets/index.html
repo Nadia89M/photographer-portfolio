@@ -1,2 +1,13 @@
 <!DOCTYPE html>
-{% extends 'base.html' %} {% load static %} {% block content %} {% endblock %}
+{% extends 'base.html' %} {% load static %} {% block content %} {% for tearsheet
+in tearsheets %}
+<figure class="snip1511">
+  <div class="image">
+    <img src="{{ tearsheet.photo_main.url }}" alt="{{ tearsheet.title }}" />
+  </div>
+  <figcaption>
+    <h4>{{ tearsheet.title }}</h4>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+{% endfor %} {% endblock %}
