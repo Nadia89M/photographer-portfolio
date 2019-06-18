@@ -1704,6 +1704,14 @@ a:hover {
   color: #e32017;
 }
 
+.grey-title {
+  color: #a0a5a9;
+}
+
+.pink-title {
+  color: #f3a9bb;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;

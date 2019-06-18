@@ -15,7 +15,9 @@
           <div class="square square-exh">
             <div class="front">
               <p class="py-5 px-3">
-                <span class="work-title">{{ exhibition.date }}</span
+                <span class="work-title pink-title">{{
+                  exhibition.date | date: 'Y'
+                }}</span
                 ><br />
                 {{ exhibition.title }}
               </p>
