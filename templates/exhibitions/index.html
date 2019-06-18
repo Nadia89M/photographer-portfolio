@@ -14,6 +14,7 @@
         {% if exhibitions %} {% for exhibition in exhibitions %}
         <li class="element">
           <ul>
+            <img class="work-img img-fluid" src="{{ exhibition.photo_main.url }}" />
             <li class="jaartal">{{exhibition.date | date:"Y"}}</li>
             <li class="ondertitel">{{exhibition.title}}</li>
           </ul>
