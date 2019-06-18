@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <!-- Photos -->
 <section id="posts" class="py-5">
-    <div class="container">
-        <!-- <div class="row text-center">
+  <div class="container">
+    <!-- <div class="row text-center">
             <div class="col-md-12">
                 <h2 class="py-5 blog-title post-title title"></h2>
             </div>
         </div> -->
-        {% if posts %}
-            {% for post in posts %}
-                 {% if post.is_published %}
-                    <div class="row text-center post-container">
-                        <div class="col-md-5 mb-3">
-                            <img src="{{post.photo_main.url}}" alt="" class="mb-3 img-fluid">
-                        </div>
-                        <div class="col-md-7 mb-3">
-                            <div class="body">
-                                <h5 class="card-title">{{ post.title }}</h5>
-                                <p class="card-text justify">{{ post.description }}</p>
-                                <a href="{{ post.id }}" class="btn btn-orange">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                {% endif %}
-            {% endfor %}
-        {% else %}
-        <div class="row text-center">
-            <div class="col-md-12">
-                <p>No Elements Available</p>
-            </div>
+    {% if posts %} {% for post in posts %} {% if post.is_published %}
+    <div class="row text-center post-container">
+      <div class="col-md-5 mb-3">
+        <img src="{{ post.photo_main.url }}" alt="" class="mb-3 img-fluid" />
+      </div>
+      <div class="col-md-7 mb-3">
+        <div class="body">
+          <h5 class="card-title orange-title">{{ post.title }}</h5>
+          <p class="card-text justify">{{ post.description }}</p>
+          <a href="{{ post.id }}" class="btn btn-orange">Read More</a>
         </div>
-        {% endif %}
+      </div>
     </div>
+    {% endif %} {% endfor %} {% else %}
+    <div class="row text-center">
+      <div class="col-md-12">
+        <p>No Elements Available</p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
 </section>
 {% endblock %}
