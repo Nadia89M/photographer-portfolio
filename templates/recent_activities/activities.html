@@ -20,13 +20,12 @@
       </div>
       <div class="col-md-7 mb-3">
         <div class="body">
-          <h5 class="card-title light-blue-title">{{ activity.title }}</h5>
+          <h5 class="work-title light-blue-title">{{ activity.title }}</h5>
           <p class="card-text justify">{{ activity.description }}</p>
-          <a href="{{ activity.id }}" class="btn btn-orange">Read More</a>
         </div>
       </div>
     </div>
-    {% endif %} {% endfor %} {% elif %}
+    {% endif %} {% endfor %} {% else %}
     <div class="row text-center">
       <div class="col-md-12">
         <p>No Activity Available</p>
