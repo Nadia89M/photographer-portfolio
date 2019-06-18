@@ -10,23 +10,40 @@
         </div> -->
     <div class="row">
       {% if exhibitions %} {% for exhibition in exhibitions %}
-      <div class="col-md-4 mb-5">
+      <!-- <div class="col-md-4 mb-5">
         <div class="square-container square-container-exh">
           <div class="square square-exh">
             <div class="front">
               <div class="container py-3">
-                <span class="work-title"><h3 class="pink-title">{{exhibition.date | date:"Y"}}</h3></br>{{exhibition.title}}</span>
-            </div>
+                <span class="work-title">
+                  <h3 class="pink-title">{{exhibition.date | date:"Y"}}</h3></br>{{exhibition.title}}
+                </span>
+              </div>
             </div>
             <div class="back">
-              <img
-                class="work-img work-img-exh"
-                src="{{ exhibition.photo_main.url }}"
-              />
+              <img class="work-img work-img-exh" src="{{ exhibition.photo_main.url }}" />
             </div>
           </div>
         </div>
+      </div> -->
+      <h1>Simple timeline slider</h1>
+
+      <div id="container">
+        <ul id="lijst">
+          <li class="element">
+            <ul>
+              <li class="jaartal">{{exhibition.date | date:"Y"}}</li>
+              <li class="ondertitel">{{exhibition.title}}</li>
+            </ul>
+          </li>
+        </ul>
+
+
       </div>
+
+      <button id="later">
+        <</button> <button id="vroeger">>
+      </button>
       {% endfor %} {% else %}
     </div>
     <div class="row text-center">
