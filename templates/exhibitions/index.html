@@ -14,8 +14,10 @@
         <div class="square-container square-container-exh">
           <div class="square square-exh">
             <div class="front">
-              <p class="p-3">
-                <span class="work-title">{{ exhibition.date }}</span
+              <p class="p-3 pt-5">
+                <span class="work-title">{{
+                  exhibition.date | date: 'M d, Y'
+                }}</span
                 ><br />
                 {{ exhibition.title }}
               </p>
