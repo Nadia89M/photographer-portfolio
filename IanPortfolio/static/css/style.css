@@ -1979,6 +1979,9 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 9;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
 
   /* Assign The 3D Transform */
   -webkit-transform: rotateX(0deg) rotateY(0deg);
@@ -2011,6 +2014,7 @@ a:hover {
   background: #dfedfc;
   overflow: hidden;
   text-align: center;
+  vertical-align: middle;
   z-index: 8;
 
   /* Assign The 3D Transform */
