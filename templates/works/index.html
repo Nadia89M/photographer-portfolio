@@ -10,10 +10,10 @@
         </div> -->
     {% if works %} {% for work in works %} {% if work.is_published %}
     <div class="row work-row text-center post-container">
-      <div class="col-md-8 mb-3">
+      <div class="col-md-6 mb-3">
         <img src="{{ work.photo_main.url }}" alt="" class="mb-3 img-fluid" />
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-6 mb-3">
         <div class="body">
           <h5 class="work-title red-title">{{ work.title }}</h5>
           <p class="card-text justify">{{ work.description }}</p>

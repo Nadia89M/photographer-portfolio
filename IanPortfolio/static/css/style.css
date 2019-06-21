@@ -1961,8 +1961,8 @@ a:hover {
 }
 
 .work-img {
-  width: 18rem;
-  height: 14rem;
+  width: 30rem;
+  height: 20rem;
 }
 
 .work-img-exh {
@@ -1971,7 +1971,7 @@ a:hover {
 }
 
 .square-container {
-  width: 18rem;
+  width: 30rem;
   margin: 0 auto;
 }
 
@@ -1983,8 +1983,8 @@ a:hover {
 /* The fun begins */
 .square {
   position: relative;
-  width: 18rem;
-  height: 14rem;
+  width: 30rem;
+  height: 20rem;
   background: #dfedfc;
   padding: 10px;
   /* Assign the perspective to enable 3d Transform */
@@ -2033,8 +2033,8 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 18rem;
-  height: 14rem;
+  width: 30rem;
+  height: 20rem;
   background: #dfedfc;
   overflow: hidden;
   text-align: center;
