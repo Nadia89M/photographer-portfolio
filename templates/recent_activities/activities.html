@@ -9,13 +9,9 @@
             </div>
         </div> -->
     {% if activities %} {% for activity in activities %}
-    <div class="row text-center post-container">
+    <div class="row py-3 text-center post-container">
       <div class="col-md-5 mb-3">
-        <img
-          src="{{ activity.photo_main.url }}"
-          alt=""
-          class="mb-3 img-fluid"
-        />
+        <img src="{{ activity.photo_main.url }}" alt="" class="mb-3 img-fluid" />
       </div>
       <div class="col-md-7 mb-3">
         <div class="body">
