@@ -1966,8 +1966,8 @@ a:hover {
 }
 
 .col-work {
-  padding: 0 !important;
-  padding-right: 20px;
+  padding: 0;
+  padding-left: 20px;
 }
 
 .work-row {
