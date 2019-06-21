@@ -10,7 +10,7 @@
         </div> -->
     {% if works %} {% for work in works %} {% if work.is_published %}
     <div class="row work-row text-center post-container">
-      <div class="col-md-6 mb-3 ">
+      <div class="col-md-6 mb-3 col-work-img">
         <img src="{{ work.photo_main.url }}" alt="" class="mb-3 img-fluid" />
       </div>
       <div class="col-md-6 mb-3 col-work">
