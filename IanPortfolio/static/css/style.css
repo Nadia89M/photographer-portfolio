@@ -1713,11 +1713,13 @@ a:hover {
 }
 
 .bg-pink {
-  background: #f3a9bb;
+  background: transparent;
+  color: #f3a9bb;
 }
 
 .bg-yellow {
-  background: #ffd300;
+  background: transparent;
+  color: #ffd300;
 }
 
 @keyframes fadein {
@@ -2333,25 +2335,4 @@ button:focus {
     width: 90%;
   }
 }
-
-/*
- *  STYLE 3
- */
-
- #style-3::-webkit-scrollbar-track
- {
-   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-   background-color: #F5F5F5;
- }
- 
- #style-3::-webkit-scrollbar
- {
-   width: 6px;
-   background-color: #F5F5F5;
- }
- 
- #style-3::-webkit-scrollbar-thumb
- {
-   background-color: #000000;
- }
  
