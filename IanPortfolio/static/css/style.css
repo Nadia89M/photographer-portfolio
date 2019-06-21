@@ -1957,6 +1957,15 @@ a:hover {
 
 /*Works*/
 
+.container-work {
+  padding: 0 !important;
+}
+
+.col-work {
+  padding: 0 !important;
+  margin-left: 10px;
+}
+
 .work-row {
   margin-bottom: 100px !important;
   margin-top: 100px !important;
