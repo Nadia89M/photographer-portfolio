@@ -13,23 +13,14 @@
       <div class="row align-items-center">
         <div class="col-6 col-xl-2" data-aos="fade-down">
           <h1 class="mb-0"></h1>
-          <ul
-            class="site-menu js-clone-nav ml-auto list-unstyled   mb-0"
-          ></ul>
+          <ul class="site-menu js-clone-nav ml-auto list-unstyled   mb-0"></ul>
         </div>
         <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
-          <nav
-            class="site-navigation position-relative text-right text-lg-center"
-            role="navigation"
-          >
+          <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
               <li class="active">
-                <a href="{% url 'index' %}" class="mb-0"
-                  ><img
-                    src="{% static 'images/logo-ian-text.png' %}"
-                    class="logo"
-                    alt="logo"
-                /></a>
+                <a href="{% url 'index' %}" class="mb-0"><img src="{% static 'images/logo-ian-text.png' %}" class="logo"
+                    alt="logo" /></a>
               </li>
             </ul>
           </nav>
@@ -37,83 +28,46 @@
 
         <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
           <div class="d-none d-xl-inline-block">
-            <ul
-              class="site-menu js-clone-nav ml-auto list-unstyled  text-right mb-0"
-            ></ul>
+            <ul class="site-menu js-clone-nav ml-auto list-unstyled  text-right mb-0"></ul>
           </div>
         </div>
       </div>
       <div class="row align-items-center">
         <div class="col-8 col-xl-2" data-aos="fade-down">
-          <a href="{% url 'index' %}" class="mb-0"
-            ><img
-              src="{% static 'images/logo-ian-text.png' %}"
-              class="logo-nav img-fluid"
-              alt="logo"
-          /></a>
-          <ul
-            class="site-menu js-clone-nav ml-auto list-unstyled   mb-0"
-          ></ul>
+          <a href="{% url 'index' %}" class="mb-0"><img src="{% static 'images/logo-ian-text.png' %}"
+              class="logo-nav img-fluid" alt="logo" /></a>
+          <ul class="site-menu js-clone-nav ml-auto list-unstyled   mb-0"></ul>
         </div>
         <div class="col-12 d-none d-xl-block" data-aos="fade-down">
-          <nav
-            class="site-navigation position-relative text-right text-lg-center"
-            role="navigation"
-          >
+          <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-              <li 
-                {% if '/' == request.path %} 
-                  class="active" 
-                {% endif %}><a href="{% url 'index' %}">Home</a></li>
-              <li
-                {% if 'welcome' in request.path %} 
-                  class="active active1" 
-                {% endif %}><a href="{% url 'welcome' %}">Welcome</a></li>
-              <li
-                {% if 'work' in request.path %} 
-                  class="active active3" 
-                {% endif %}><a href="{% url 'works' %}">Work</a></li>
-              <li
-                {% if 'recent_activities' in request.path %} 
-                  class="active active4" 
-                {% endif %}><a href="{% url 'activities' %}">Recent Activity</a></li>
-              <li
-                {% if 'testimonials' in request.path %} 
-                  class="active active6" 
-                {% endif %}><a href="{% url 'testimonials' %}">Testimonials</a></li>
-              <li
-              {% if 'tearsheets' in request.path %} 
-                class="active active2" 
-              {% endif %}><a href="{% url 'tearsheets' %}">Tearsheets</a></li>
-              <li
-              {% if 'exhibitions' in request.path %} 
-                class="active active7" 
-              {% endif %}><a href="{% url 'exhibitions' %}">Exhibitions</a></li>
-              <li
-              {% if 'elements' in request.path %} 
-                class="active active5" 
-              {% endif %}><a href="{% url 'posts' %}">Elements</a></li>
-              <li
-              {% if 'game' in request.path %} 
-                class="active active8" 
-              {% endif %}><a href="{% url 'game' %}">Game</a></li>
+              <li {% if '/' == request.path %} class="active" {% endif %}><a href="{% url 'index' %}">Home</a></li>
+              <li {% if 'welcome' in request.path %} class="active active1" {% endif %}><a
+                  href="{% url 'welcome' %}">Welcome</a></li>
+              <li {% if 'work' in request.path %} class="active active3" {% endif %}><a
+                  href="{% url 'works' %}">Work</a></li>
+              <li {% if 'recent_activities' in request.path %} class="active active4" {% endif %}><a
+                  href="{% url 'activities' %}">Recent Activity</a></li>
+              <li {% if 'testimonials' in request.path %} class="active active6" {% endif %}><a
+                  href="{% url 'testimonials' %}">Testimonials</a></li>
+              <li {% if 'tearsheets' in request.path %} class="active active2" {% endif %}><a
+                  href="{% url 'tearsheets' %}">Tearsheets</a></li>
+              <li {% if 'exhibitions' in request.path %} class="active active7" {% endif %}><a
+                  href="{% url 'exhibitions' %}">Exhibitions</a></li>
+              <li {% if 'elements' in request.path %} class="active active5" {% endif %}><a
+                  href="{% url 'posts' %}">Elements</a></li>
+              <li {% if 'game' in request.path %} class="active active8" {% endif %}><a href="{% url 'game' %}">Go</a>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="col-4 col-xl-2 text-right" data-aos="fade-down">
           <div class="d-none d-xl-inline-block">
-            <ul
-              class="site-menu js-clone-nav ml-auto list-unstyled  text-right mb-0"
-            ></ul>
+            <ul class="site-menu js-clone-nav ml-auto list-unstyled  text-right mb-0"></ul>
           </div>
 
-          <div
-            class="d-inline-block d-xl-none ml-md-0 mr-auto py-3"
-            style="position: relative; top: 3px;"
-          >
-            <a href="#" class="site-menu-toggle js-menu-toggle text-black"
-              ><span class="icon-menu h3"></span
-            ></a>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
+            <a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a>
           </div>
         </div>
       </div>
