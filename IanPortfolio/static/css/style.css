@@ -1960,10 +1960,10 @@ a:hover {
   font-weight: bold;
 }
 
-/* .work-img {
+.work-img {
   width: 30rem;
   height: 20rem;
-} */
+}
 
 .work-img-exh {
   width: 14rem;
@@ -2335,3 +2335,6 @@ button:focus {
   
 }
 
+.scrollable-element {
+  scrollbar-color: pink yellow;
+}
