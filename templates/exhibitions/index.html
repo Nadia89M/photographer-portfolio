@@ -14,9 +14,9 @@
         {% if exhibitions %} {% for exhibition in exhibitions %}
         <li class="element 
         {% if exhibition.is_vertical %}
-          vertical 
+          vertical-v
         {% else %} 
-          horizontal
+          horizontal-h
         {% endif %}">
           <ul>
             <img class="img-fluid" src="{{ exhibition.photo_main.url }}" />
