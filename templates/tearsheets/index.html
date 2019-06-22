@@ -11,7 +11,7 @@
 
     <div id="container" class="yellow-line">
       <ul id="lijst">
-        {% if tearsheets %} {% for tearsheet in tearsheets %}
+        {% if tearsheets %} {% for tearsheet in tearsheets %} {% if tearsheet.is_published %}
         <li class="element 
         {% if tearsheet.is_vertical %}
           vertical-v 
@@ -23,7 +23,7 @@
             <li class="jaartal j-yellow"></li>
           </ul>
         </li>
-        {% endfor %}
+        {% endif %} {% endfor %}
       </ul>
 
 

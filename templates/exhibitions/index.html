@@ -11,7 +11,7 @@
 
     <div id="container" class="pink-line">
       <ul id="lijst">
-        {% if exhibitions %} {% for exhibition in exhibitions %}
+        {% if exhibitions %} {% for exhibition in exhibitions %} {% if exhibition.is_published %}
         <li class="element 
         {% if exhibition.is_vertical %}
           vertical-v
@@ -24,7 +24,7 @@
             <li class="ondertitel">{{exhibition.title}}</li>
           </ul>
         </li>
-        {% endfor %}
+        {% endif %}{% endfor %}
       </ul>
 
     </div>

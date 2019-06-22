@@ -8,7 +8,7 @@
                 <h2 class="py-5 blog-title post-title title"></h2>
             </div>
         </div> -->
-    {% if activities %} {% for activity in activities %}
+    {% if activities %} {% for activity in activities %} {% if activity.is_published %}
     <div class="row py-3 text-center post-container">
       <div class="col-md-5 mb-3">
         <img src="{{ activity.photo_main.url }}" alt="" class="mb-3 img-fluid" />
@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    {% endfor %} {% else %}
+    { % endif %}{% endfor %} {% else %}
     <div class="row text-center">
       <div class="col-md-12">
         <p>No Activity Available</p>
