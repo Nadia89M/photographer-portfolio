@@ -1730,6 +1730,10 @@ a:hover {
   border-bottom: 1px solid  #ffd300;
 }
 
+.purple-border {
+  border: 1px solid #660066;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
