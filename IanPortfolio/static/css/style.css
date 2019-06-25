@@ -2116,6 +2116,10 @@ a:hover {
     height: 10rem;
     font-size: 50%;
     }
+
+    .square .back p {
+      padding: 5px !important;
+      }
 }
 
 /*Activities*/
