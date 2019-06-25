@@ -2094,7 +2094,7 @@ a:hover {
   -moz-transform: rotateX(0deg) rotateY(0deg);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   .work-img {
     width: 15rem;
     height: 10rem;
@@ -2114,6 +2114,7 @@ a:hover {
   .square .back {
     width: 15rem;
     height: 10rem;
+    font-size: 70%;
     }
 }
 
