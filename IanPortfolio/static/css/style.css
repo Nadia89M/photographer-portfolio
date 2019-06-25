@@ -2094,6 +2094,29 @@ a:hover {
   -moz-transform: rotateX(0deg) rotateY(0deg);
 }
 
+@media screen and (max-width: 1200px) {
+  .work-img {
+    width: 15rem;
+    height: 10rem;
+  }
+  
+  .square-container {
+    width: 15rem;
+  }
+  
+  /* The fun begins */
+  .square {
+    width: 15rem;
+    height: 10rem;
+  }
+  
+  
+  .square .back {
+    width: 15rem;
+    height: 10rem;
+    }
+}
+
 /*Activities*/
 
 .btn-blue {
@@ -2360,4 +2383,18 @@ button:focus {
     width: 90%;
   }
 }
+
+/*Game*/
+
+.small {
+  display: none;
+}
  
+@media screen and (max-width: 320px) {
+  .small {
+    display: block;
+  }
+  .large {
+    display: none;
+  }
+}
