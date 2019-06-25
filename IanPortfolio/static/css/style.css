@@ -2320,7 +2320,10 @@ a:hover {
              font-weight: bold; 
              border-bottom: 1px solid #f3a9bb;}
 
-  .ondertitel { font-size: 12pt; }
+  .ondertitel { 
+    font-size: 12pt;
+    text-align: center;
+   }
 
 button {
   background-color: #000;
