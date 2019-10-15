@@ -55,7 +55,6 @@ a:hover {
   height: 100%;
   width: 100%;
   z-index: 2;
-  overflow: hidden;
 }
 .offcanvas-menu .site-wrap:before {
   opacity: 1;
