@@ -1820,6 +1820,7 @@ a:hover {
 
 .message-box-border {
   border: 3px solid #dfedfc;
+  margin: 0 30px;
 }
 
 .message-row:last-of-type {
