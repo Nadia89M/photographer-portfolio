@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 <!-- <div class="container-fluid main-img"></div> -->
 <div class="quote">
   <p>
-    I don't know what London's coming to - the higher the buildings the
-    lower the morals <span>Noel Coward</span>
+    I don't know what London's coming to - the higher the buildings the lower
+    the morals <span>Noel Coward</span>
   </p>
 </div>
 <div class="tech-slideshow">
@@ -14,6 +12,22 @@
   <!--   <div class="mover-2"></div> -->
 </div>
 
+<!--Message-->
+{% if messages %} {% for message in messages %} {% if message.is_published %}
+<div class="row justify-content-md-center pt-5 message-row">
+  <div class="col-md-6 p-3 message-box-border">
+    <p class="text-center">{{ message.title }}</p>
+    <p class="text-justify">
+      {{ message.text }}
+    </p>
+    <img
+      src="{% static '/images/signature.jpg' %}"
+      alt=""
+      class="img-fluid signature float-right"
+    />
+  </div>
+</div>
+{% endif %} {% endfor %} {% endif %}
 <!-- <div class="container-fluid" data-aos="fade" data-aos-delay="500">
   <div class="swiper-container images-carousel">
     <div class="swiper-wrapper">

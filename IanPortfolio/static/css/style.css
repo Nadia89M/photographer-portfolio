@@ -1726,7 +1726,7 @@ a:hover {
 }
 
 .yellow-line {
-  border-bottom: 1px solid  #ffd300;
+  border-bottom: 1px solid #ffd300;
 }
 
 .purple-border {
@@ -1814,6 +1814,16 @@ a:hover {
   100% {
     transform: translateX(-66.6666%);
   }
+}
+
+/*Homepage*/
+
+.message-box-border {
+  border: 3px solid #dfedfc;
+}
+
+.message-row:last-of-type {
+  padding-bottom: 48px;
 }
 
 /*Welcome*/
@@ -2098,27 +2108,26 @@ a:hover {
     width: 15rem;
     height: 10rem;
   }
-  
+
   .square-container {
     width: 15rem;
   }
-  
+
   /* The fun begins */
   .square {
     width: 15rem;
     height: 10rem;
   }
-  
-  
+
   .square .back {
     width: 15rem;
     height: 10rem;
     font-size: 50%;
-    }
+  }
 
-    .square .back p {
-      padding: 5px !important;
-      }
+  .square .back p {
+    padding: 5px !important;
+  }
 }
 
 /*Activities*/
@@ -2318,16 +2327,18 @@ a:hover {
   padding: 0px;
   margin: 0px;
 }
-  
-  .jaartal { padding: 5px;
-             font-size: 14pt;
-             font-weight: bold; 
-             border-bottom: 1px solid #f3a9bb;}
 
-  .ondertitel { 
-    font-size: 12pt;
-    text-align: center;
-   }
+.jaartal {
+  padding: 5px;
+  font-size: 14pt;
+  font-weight: bold;
+  border-bottom: 1px solid #f3a9bb;
+}
+
+.ondertitel {
+  font-size: 12pt;
+  text-align: center;
+}
 
 button {
   background-color: #000;
@@ -2372,7 +2383,9 @@ button:focus {
 }
 
 .vertical-v:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .horizontal-h {
@@ -2383,11 +2396,13 @@ button:focus {
 }
 
 .horizontal-h:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .j-yellow {
-  border-bottom: 1px solid #ffd300 ;
+  border-bottom: 1px solid #ffd300;
 }
 
 @media screen and (max-width: 500px) {
@@ -2401,7 +2416,7 @@ button:focus {
 .small {
   display: none;
 }
- 
+
 @media screen and (max-width: 320px) {
   .small {
     display: block;
