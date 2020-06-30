@@ -54,6 +54,8 @@
                   href="{% url 'tearsheets' %}">Tearsheets</a></li>
               <li {% if 'exhibitions' in request.path %} class="active active7" {% endif %}><a
                   href="{% url 'exhibitions' %}">Exhibitions</a></li>
+              <li {% if 'current-exhibition' in request.path %} class="active active9" {% endif %}><a href="{% url 'current-exhibition' %}">Current Exhibition</a>
+              </li>
               <li {% if 'elements' in request.path %} class="active active5" {% endif %}><a
                   href="{% url 'posts' %}">Elements</a></li>
               <li {% if 'game' in request.path %} class="active active8" {% endif %}><a href="{% url 'game' %}">Go</a>

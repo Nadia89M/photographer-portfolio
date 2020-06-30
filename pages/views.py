@@ -18,3 +18,7 @@ def welcome(request):
 
 def game(request):
     return render(request, 'pages/game.html', {})
+
+
+def currentexhibition(request):
+    return render(request, 'pages/current-exhibition.html', {})
