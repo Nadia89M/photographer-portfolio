@@ -1,15 +1,21 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ian Macaulay</title>
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700"
+      rel="stylesheet"
+    />
     <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
     <!-- Custom -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" />
     <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}" />
@@ -20,18 +26,25 @@
     <link rel="stylesheet" href="{% static 'css/swiper.css'%}" />
     <link rel="stylesheet" href="{% static 'css/aos.css'%}" />
     <link rel="stylesheet" href="{% static 'css/style.css'%}" />
-    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css'%}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'fonts/flaticon/font/flaticon.css'%}"
+    />
     <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css'%}" />
-
-
-</head>
-<body>
-    <!--Navbar-->  
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Navbar-->
     {% include 'partials/_navbar.html' %}
     <div class="content">
-        {% block content %} {% endblock %}
+      {% block content %} {% endblock %}
     </div>
-    <!--Footer-->  
+    <!--Footer-->
     {% include 'partials/_footer.html' %}
     <script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
     <script src="{% static 'js/jquery-migrate-3.0.1.min.js'%}"></script>
@@ -52,8 +65,27 @@
     <script src="{% static 'js/script.js'%}"></script>
     <script>
       $(document).ready(function() {
-        $("#lightgallery").lightGallery();
+        $('#lightgallery').lightGallery();
       });
     </script>
-</body>
+    <script>
+      $(document).ready(function() {
+        var paused = 0;
+        $('#myCarouselArticle').carousel({
+          interval: 1000,
+          pause: 0
+        });
+
+        /* Play trigger */
+        $('#toggleCarousel').click(function() {
+          var state = paused ? 'cycle' : 'pause';
+          paused = paused ? 0 : 1;
+          $('#myCarouselArticle').carousel(state);
+          $(this)
+            .find('i')
+            .toggleClass('fa-pause fa-play');
+        });
+      });
+    </script>
+  </body>
 </html>
