@@ -72,14 +72,14 @@
       $(document).ready(function() {
         var paused = 0;
         $('#myCarouselArticle').carousel({
-          interval: 1000,
-          pause: 0
+          interval: 3000,
+          pause: false
         });
 
         /* Play trigger */
         $('#toggleCarousel').click(function() {
           var state = paused ? 'cycle' : 'pause';
-          paused = paused ? 0 : 1;
+          paused = paused ? false : true;
           $('#myCarouselArticle').carousel(state);
           $(this)
             .find('i')
