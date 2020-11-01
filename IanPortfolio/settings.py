@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'testimonials',
     'exhibitions',
     'message',
+    'welcome',
+    'news'
 ]
 
 MIDDLEWARE = [

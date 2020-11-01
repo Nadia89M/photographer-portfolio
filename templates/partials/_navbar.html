@@ -48,6 +48,8 @@
                   href="{% url 'works' %}">Work</a></li>
               <li {% if 'recent_activities' in request.path %} class="active active4" {% endif %}><a
                   href="{% url 'activities' %}">Recent Activity</a></li>
+              <li {% if 'news' in request.path %} class="active active9" {% endif %}><a
+                  href="{% url 'news' %}">News</a></li>
               <li {% if 'testimonials' in request.path %} class="active active6" {% endif %}><a
                   href="{% url 'testimonials' %}">Testimonials</a></li>
               <li {% if 'tearsheets' in request.path %} class="active active2" {% endif %}><a
@@ -58,7 +60,7 @@
               </li>
               <li {% if 'elements' in request.path %} class="active active5" {% endif %}><a
                   href="{% url 'posts' %}">Elements</a></li>
-              <li {% if 'game' in request.path %} class="active active8" {% endif %}><a href="{% url 'game' %}">Go</a>
+              <li {% if 'game' in request.path %} class="active active10" {% endif %}><a href="{% url 'game' %}">Go</a>
               </li>
             </ul>
           </nav>

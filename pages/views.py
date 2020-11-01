@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from message.models import Message
+from welcome.models import Welcome
 
 # Create your views here.
 
@@ -13,7 +14,11 @@ def index(request):
 
 
 def welcome(request):
-    return render(request, 'pages/welcome.html', {})
+    welcomes = Welcome.objects.all()
+    context = {
+        'welcomes': welcomes,
+    }
+    return render(request, 'pages/welcome.html', context)
 
 
 def game(request):

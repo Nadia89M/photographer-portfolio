@@ -8,6 +8,7 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('tearsheets/', include('tearsheets.urls')),
     path('work/', include('works.urls')),
+    path('news/', include('news.urls')),
     path('recent_activities/', include('activities.urls')),
     path('elements/', include('posts.urls')),
     path('testimonials/', include('testimonials.urls')),
