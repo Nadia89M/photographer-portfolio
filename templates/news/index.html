@@ -9,14 +9,14 @@
             </div>
         </div> -->
     {% if news %} {% for new in news %} {% if new.is_published %}
-    <div class="row work-row text-center post-container">
+    <div class="row work-row post-container">
       <div class="col-md-6 mb-3 col-work-img">
         <img src="{{ new.photo_main.url }}" alt="" class="mb-3 img-fluid" />
       </div>
       <div class="col-md-6 mb-3 col-work">
         <div class="body">
-          <h5 class="work-title green-title">{{ new.title }}</h5>
-          <p class="card-text justify">{{ new.description | safe }}</p>
+          <h5 class="work-title green-title text-center">{{ new.title }}</h5>
+          <p class="card-text">{{ new.description | safe }}</p>
         </div>
       </div>
     </div>
